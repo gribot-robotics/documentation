@@ -594,7 +594,7 @@
         </folder>
         <folder path="."/>
         <file name="architecture/architecture.xml"/>
-        <file name="electronique/electronique.xml"/>
+        <file name="electronique/electronic.xml"/>
         <file name="glossaire/glossaire.xml"/>
         <file name="Introduction/introduction.xml"/>
         <file name="main.xml"/>

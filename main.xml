@@ -40,7 +40,7 @@
     <xi:include href="architecture/architecture.xml"/>
     <xi:include href="prototype/prototype.xml"/>
 
-    <xi:include href="electronique/electronique.xml"/>
+    <xi:include href="electronique/electronic.xml"/>
     
     <xi:include href="software/software.xml"/>
     
