@@ -5,19 +5,18 @@
     xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
      <title>Bibliography</title>
      <para/>
-    <para/>
     <bibliography>
-        <title>Bibliographie</title>
+        <title>Bibliography</title>
         
         <biblioentry xreflabel="wiki01">
-            <title>Résistance au roulement</title>
+            <title>Rolling resistance</title>
             <publisher>
                 <publishername>Wikipedia</publishername>
             </publisher>
         </biblioentry>
         
         <biblioentry xreflabel="ROS01">
-            <title>Robot Operatinf System</title>
+            <title>Robot Operating System</title>
             <publisher>
                 <publishername>ROS</publishername>
             </publisher>
