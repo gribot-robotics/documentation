@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://docbook.org/xml/5.1/rng/docbook.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://docbook.org/xml/5.1/sch/docbook.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<glossary xmlns="http://docbook.org/ns/docbook" version="5.1">
+    <title>Glossaire</title>
+    <para/>
+    <glossdiv>
+        <title></title>
+        <glossentry>
+            <glossterm>GPS RTK</glossterm>
+            <glossdef>
+                <para>La Cinématique temps réel (Real Time Kinematic, en anglais ou RTK) est une
+                    technique de positionnement par satellite basée sur l'utilisation de mesures de
+                    la phase des ondes porteuses des signaux émis par les systèmes GPS, GLONASS ou
+                    Galileo. Une station de référence fournit des corrections en temps réel
+                    permettant d'atteindre une précision de l'ordre du centimètre. Dans le cas
+                    particulier du GPS, le système est alors appelé Carrier-Phase Enhancement ou
+                    CPGPS.</para>
+            </glossdef>
+        </glossentry>
+        <glossentry>
+            <glossterm>SLAM</glossterm>
+            <glossdef><para>Simultaneous Localization And Mapping, signifie localisation et cartographie
+                    simultanées.</para></glossdef>
+            
+        </glossentry>
+        <glossentry>
+            <glossterm>GPL</glossterm>
+            <glossdef><para>GNU General Public License</para></glossdef>
+        </glossentry>
+    </glossdiv>
+</glossary>

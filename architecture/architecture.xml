@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://docbook.org/xml/5.1/rng/docbook.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://docbook.org/xml/5.1/sch/docbook.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<chapter xmlns="http://docbook.org/ns/docbook"
+    xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
+     <title>Architecture</title>
+     <para>Le robot tondeuse est constitué de différents éléments mécaniques, électroniques et
+        logiciels. Les différents paragraphes ci-dessous donnent les détails de chaque
+        élément.</para>
+    <section>
+        <title>Conception mécanique<indexterm>
+                <primary>Conception mécanique</primary>
+            </indexterm></title>
+        <para>A faire</para>
+        <section>
+            <title>Châssis<indexterm>
+                    <primary>Châssis</primary>
+                </indexterm></title>
+            <para>A faire</para>
+            <section>
+                <title>Roues<indexterm>
+                        <primary>Roues</primary>
+                    </indexterm></title>
+                <para>La tondeuse dispose de 4 roues de 30cm de diamètre. </para>
+            </section>
+        </section>
+        <section>
+            <title>Carrosserie<indexterm>
+                    <primary>Carrosserie</primary>
+                </indexterm></title>
+            <para>A faire</para>
+        </section>
+        <section>
+            <title>Propulsion<indexterm>
+                    <primary>Propulsion</primary>
+                </indexterm></title>
+            <para>La propulsion est assurée par quatre moteurs électriques de 25W chacun au minimum
+                (voir <xref linkend="puissance"/> et <xref linkend="couple"/>). Les caractéristiques
+                des ces moteurs sont:</para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Puissance: 22,5W</para>
+                    </listitem>
+                    <listitem>
+                        <para>Couple: 6,75 Nm</para>
+                    </listitem>
+                    <listitem>
+                        <para>Vitesse de rotation: 33 t/min</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>Par ailleurs, le moteur comportera un encodeur, pour mesurer le nombre de tours
+                effectués, ainsi qu'un réducteur.</para>
+            <section>
+                <title>Moteur<indexterm>
+                        <primary>Moteur</primary>
+                        <secondary>Propulsion</secondary>
+                    </indexterm></title>
+                <para>Moteur brushless à encodeur</para>
+            </section>
+            <section>
+                <title>Réducteur<indexterm>
+                        <primary>Réducteur</primary>
+                        <secondary>Propulsion</secondary>
+                    </indexterm></title>
+                <para></para>
+            </section>
+            <section>
+                <title>Encodeur<indexterm>
+                        <primary>Encodeur</primary>
+                        <secondary>Propulsion</secondary>
+                    </indexterm></title>
+                <para>L'encodeur permet de compter le nombre de tours effectivement réalisés par le
+                    moteur. En connaissant le rapport de réduction du réducteur ainsi que le
+                    diamètre des roues, on en tire rapidement la distance parcourue.</para>
+            </section>
+        </section>
+        <section>
+            <title>Coupe<indexterm>
+                    <primary>Coupe</primary>
+                </indexterm></title>
+            <para>Moteur brushless à encodeur.</para>
+        </section>
+    </section>
+    <section>
+        <title>Architecture électronique<indexterm>
+                <primary>Architecture</primary>
+                <secondary>Électronique</secondary>
+            </indexterm></title>
+        <para>L'électronique de commande est constituées de plusieurs blocs distincts, comme le
+            montre le schéma ci-dessous.</para>
+        <figure>
+            <title>Architecture de la commande du robot</title>
+            <mediaobject>
+                <imageobject>
+                    <imagedata fileref="architecture.png" align="center"/>
+                </imageobject>
+            </mediaobject>
+        </figure>
+        
+        <para></para>
+        <section>
+            <title>Contrôleur de moteur de propulsion</title>
+            <para>A faire</para>
+        </section>
+        <section>
+            <title>Contrôleur de moteur de coupe</title>
+            <para>A faire</para>
+        </section>
+        <section>
+            <title>Lidar</title>
+            <para>A faire</para>
+        </section>
+        <section>
+            <title>GPS</title>
+            <para>A faire</para>
+        </section>
+        <section>
+            <title>Contacts de proximité</title>
+            <para>A faire</para>
+        </section>
+        <section>
+            <title>Batterie</title>
+            <para>A faire</para>
+        </section>
+        <section>
+            <title>Ordinateur embarqué</title>
+            <para>A faire</para>
+        </section>
+        <section>
+            <title>Capteurs de situation</title>
+            <para>Accéléromètre, gyroscope, magnétomètre</para>
+        </section>
+        <section>
+            <title>Communication</title>
+            <para>WiFi, GSM</para>
+        </section>
+    </section>
+    <section>
+        <title>Architecture informatique<indexterm>
+                <primary>Architecture</primary>
+                <secondary>Informatique</secondary>
+            </indexterm></title>
+        <para>Le logiciel du robot tondeuse fonctionne sur un Raspberri Pi III. Il est constitué des
+            deux importantes briques suivantes:</para>
+        <para>
+            <itemizedlist>
+                <listitem>
+                    <para>Le système d'exploitation Linux Ubuntu</para>
+                </listitem>
+                <listitem>
+                    <para>L'environnement de robotique ROS (Robot Operating System).</para>
+                </listitem>
+            </itemizedlist>
+        </para>
+    </section>
+
+</chapter>

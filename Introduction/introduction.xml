@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://docbook.org/xml/5.1/rng/docbook.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://docbook.org/xml/5.1/sch/docbook.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<chapter xmlns="http://docbook.org/ns/docbook"
+    xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
+     <title>Introduction</title>
+    <para>We very often talk about precision farming and agricultural automation. However, most of
+        these projects consist in improving the traditional way of doing things, without radically
+        changing it. As an example, grass management in crops such as vines, fruit trees, or plot
+        ends is done in a very traditional way: with a tractor and mower or gyro mower, and with
+        weed killers for areas that are not or not easily accessible by machines. The same problem
+        can be found in the maintenance of roadsides or large non-agricultural grassy areas.</para>
+    <section>
+        <title>Objectifs du robot tondeuse</title>
+        <para>Ce robot tondeuse s'inscrit dans une logique de développement durable. Les objectifs
+            sont:</para>
+        <para>
+            <itemizedlist>
+                <listitem>
+                    <para>Supprimer l'utilisation d'herbicides polluants et dangereux pour la santé
+                        et la nature.</para>
+                </listitem>
+                <listitem>
+                    <para>Diminuer les émission de CO2 en n'utilisant pas de carburant fossiles et
+                        non renouvelables.</para>
+                </listitem>
+                <listitem>
+                    <para>Diminuer les coûts d'exploitations.</para>
+                    <para>Afin de pouvoir rapidement s’insérer dans une logique de développement
+                        durable, les plans et logiciels du robot sont distribuées sous licence GNU
+                        General Public License (GPL), saus les éléments que nous achetons tout
+                        faits, tels que les moteurs, LIDAR, circuits électroniques, etc. qui sont
+                        sous la license du fabriquant<footnote>
+                            <para>Ces éléments peuvent être sous license propriétaire.</para>
+                        </footnote>.</para>
+                    <para>Le robot pourra également être vendu complètement assemblé, ou sous forme
+                        de kit soit complet soit partiel. Le kit partiel comprenant, par exemple,
+                        des éléments usinées spécifiquement pour le robot.</para>
+                    <para>Tous les plans et logiciels sont librement disponibles sur Internet.</para>
+                </listitem>
+            </itemizedlist>
+        </para>
+    </section>
+</chapter>
+
