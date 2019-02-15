@@ -8,3 +8,9 @@ assignees: ''
 ---
 
 **Section concerned**
+Which section, chapter or paragraf is concerned ?
+
+**Text concerned**
+
+**Correct text**
+
