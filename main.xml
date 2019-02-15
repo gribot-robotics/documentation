@@ -47,7 +47,7 @@
     <!--  <xi:include href="rappel_physique/rappel_physique.xml"/>-->
 
     
-    <xi:include href="glossaire/glossaire.xml"/>
+    <xi:include href="glossaire/glossary.xml"/>
     <xi:include href="bibliographie/bibliographie.xml"/>
     <xi:include href="index.xml"/>
 </book>
