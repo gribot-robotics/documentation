@@ -10,12 +10,12 @@
     <para>This chapter describes the general and detailed specifications of the robot
         lawnmower.</para>
     <section>
-        <title>General specifications générales</title>
+        <title>General specifications</title>
         <indexterm>
             <primary>Specifications</primary>
             <secondary>General</secondary>
         </indexterm>
-        <para>general specifications are the following:</para>
+        <para>General specifications are the following:</para>
         <para>
             <itemizedlist>
                 <listitem>
@@ -26,120 +26,105 @@
                     </indexterm>
                 </listitem>
                 <listitem>
-                    <para>Cutting width: 60cm</para>
+                    <para>Working width: 60cm</para>
                     <indexterm>
-                        <primary>Cutting width</primary>
+                        <primary>Working width</primary>
                         <secondary>Specifications</secondary>
                     </indexterm>
                 </listitem>
                 <listitem>
-                    <para>Vitesse de travail maximum: 1,8 km/h, soit 0.5 m/s.</para>
+                    <para>Maximum working speed: 1,8 km/h, that is 0.5 m/s.</para>
                     <indexterm>
-                        <primary>Vitesse de travail</primary>
-                        <secondary>Spécification</secondary>
+                        <primary>Working speed</primary>
+                        <secondary>Specification</secondary>
                     </indexterm>
                 </listitem>
                 <listitem>
-                    <para>Vitesse de déplacement:
-                        <?oxy_comment_start author="gcorbaz" timestamp="20170713T174518+0200" comment="Peut-être plus si les couteaux sont levés, mais plus coûteux"?>1,8
-                        km/h<?oxy_comment_end?></para>
+                    <para>Travel speed: 1,8 km/h</para>
                     <indexterm>
-                        <primary>Vitesse de déplacement</primary>
-                        <secondary>Spécification</secondary>
+                        <primary>Travel speed</primary>
+                        <secondary>Specification</secondary>
                     </indexterm>
                 </listitem>
                 <listitem>
-                    <para>Surface traitable minimum: 20'000 m<superscript>2</superscript></para>
+                    <para>Minimum treatable area: 20'000 m<superscript>2</superscript></para>
                     <indexterm>
-                        <primary>Surface traitable</primary>
-                        <secondary>Spécification</secondary>
+                        <primary>Treatable area</primary>
+                        <secondary>Specification</secondary>
                     </indexterm>
                 </listitem>
                 <listitem>
-                    <para>Délimitation de la surface à traiter par GPS (RTK Real Time Kinematic).
-                        L'installation d'un fil est exclue.</para>
+                    <para>Delimitation of the surface to be treated by GPS RTK (Real Time
+                        Kinematic). Installation of a wire is excluded.</para>
                     <indexterm>
-                        <primary>Limites de surface</primary>
-                        <secondary>Spécification</secondary>
-                    </indexterm>
-                    <indexterm>
-                        <primary>Spécification</primary>
-                        <secondary>Spécification</secondary>
+                        <primary>Surface boundary</primary>
+                        <secondary>Specification</secondary>
                     </indexterm>
                 </listitem>
                 <listitem>
-                    <para>Garde au sol (distance au sol du châssis): min 10cm</para>
+                    <para>Ground clearance (chassis to ground distance): min 10cm</para>
                     <indexterm>
-                        <primary>Garde au sol</primary>
-                        <secondary>Spécification</secondary>
+                        <primary>Ground clearance</primary>
+                        <secondary>Specification</secondary>
                     </indexterm>
                 </listitem>
                 <listitem>
-                    <para>Autonomie: 4h minimum.</para>
+                    <para>Autonomy: 4h minimum.</para>
                     <indexterm>
-                        <primary>Autonomie</primary>
-                        <secondary>Spécification</secondary>
+                        <primary>Autonomy</primary>
+                        <secondary>Specification</secondary>
                     </indexterm>
                 </listitem>
                 <listitem>
-                    <para>Navigation autonome et évitement des obstacles.</para>
+                    <para>Autonomous navigation and obstacle avoidance.</para>
                     <indexterm>
                         <primary>Navigation</primary>
-                        <secondary>Spécification</secondary>
+                        <secondary>Specification</secondary>
                     </indexterm>
                 </listitem>
                 <listitem>
-                    <para>Stratégie d'optimisation de la coupe de l'herbe afin d'utiliser au mieux
-                        la batterie.</para>
+                    <para>Trajectory optimization strategy to save battery power.</para>
                 </listitem>
                 <listitem>
-                    <para>Hauteur d'obstacle franchissable minimum: 10cm.</para>
+                    <para>Minimum passable obstacle height: 10cm.</para>
                     <para>
                         <itemizedlist>
                             <listitem>
-                                <para>Pente franchissable maximum: 45°.</para>
+                                <para>Maximum crossable slope: 45°.</para>
                             </listitem>
                         </itemizedlist>
                     </para>
                     <indexterm>
-                        <primary>Hauteur franchissable</primary>
-                        <secondary>Spécification</secondary>
+                        <primary>Crossing height</primary>
+                        <secondary>Specification</secondary>
                     </indexterm>
                 </listitem>
                 <listitem>
-                    <para>Vitesse de rotation des couteaux: 3000t/m</para>
+                    <para>Safety and protection of users and animals.</para>
                     <indexterm>
-                        <primary>Vitesse de rotation des couteaux</primary>
-                        <secondary>Spécification</secondary>
-                    </indexterm>
-                </listitem>
-                <listitem>
-                    <para>Sécurité et protection des utilisateurs et des animaux.</para>
-                    <indexterm>
-                        <primary>Sécurité</primary>
-                        <secondary>Spécification</secondary>
+                        <primary>Security</primary>
+                        <secondary>Specification</secondary>
                     </indexterm>
                     <para>
                         <itemizedlist>
                             <listitem>
-                                <para>Les utilisateurs et les animaux ne doivent pas pouvoir entrer
-                                    en contact avec les couteaux.</para>
+                                <para>Users and animals must not be allowed to come into contact with sharp parts (e. g. mower knives).</para>
                             </listitem>
                             <listitem>
-                                <para>La machine doit s'arrêter lorsque quelqu'un s'approche
-                                    trop.</para>
+                                <para>The machine must stop when someone approaches too
+                                    close.</para>
                             </listitem>
                             <listitem>
-                                <para>Les couteaux doivent s'arrêter lorsque la machine s'incline
-                                    trop (soulèvement pas quelqu'un par ex.).</para>
+                                <para>Cutting elements (e.g. mower knives) must stop if the machine
+                                    tilts too much.</para>
                             </listitem>
                             <listitem>
-                                <para>La machine doit complètement s'arrêter et se mettre en alarme
-                                    si elle se renverse.</para>
+                                <para>The machine must stop completely and go into alarm if it
+                                    overturns.</para>
                             </listitem>
                             <listitem>
-                                <para>La machine doit complètement s'arrêter et se mettre en alarme
-                                    si elle est bloquée.</para>
+                                <para>The machine must stop completely and go into alarm if it is
+                                    blocked.</para>
                             </listitem>
                         </itemizedlist>
                     </para>
@@ -153,133 +138,128 @@
                                     access.</para>
                             </listitem>
                             <listitem>
-                                <para>Only unser who need to access the robot will be allowed to
+                                <para>Only user who need to access the robot will be allowed to
                                     access it.</para>
                             </listitem>
                             <listitem>
-                                <para>Robot owner must be tracked: if the owner sell his robot to
-                                    someone else, a mechanism has to be put in place to track this
-                                    transaction. All access right and ownership parameters have to
-                                    be transmitted to the new owner.</para>
+                                <para>Robot ownership must be tracked: if the owner sell his robot
+                                    to someone else, a mechanism has to be put in place to track
+                                    this transaction. All access right and ownership parameters have
+                                    to be transmitted to the new owner.</para>
                             </listitem>
                         </itemizedlist>
                     </para>
                 </listitem>
                 <listitem>
-                    <para>Accès à distance</para>
+                    <para>Remote access</para>
                     <indexterm>
-                        <primary>Accès à distance</primary>
-                        <secondary>Spécification</secondary>
+                        <primary>Remote access</primary>
+                        <secondary>Specification</secondary>
                     </indexterm>
                     <para>
                         <itemizedlist>
                             <listitem>
-                                <para>Activation/désactivation du robot.</para>
+                                <para>Robot activation/deactivation.</para>
                             </listitem>
                             <listitem>
-                                <para>Information sur l'état.</para>
+                                <para>Status information.</para>
                             </listitem>
                             <listitem>
-                                <para>Informations sur la position.</para>
+                                <para>Position information.</para>
                             </listitem>
                             <listitem>
-                                <para>Programmation de la zone de fonctionnement.</para>
+                                <para>Programming the operating area.</para>
                             </listitem>
                             <listitem>
-                                <para>Accès via une application sur un mobile.</para>
+                                <para>Access via an application on a mobile phone.</para>
                             </listitem>
                             <listitem>
-                                <para>Accès via un site Internet.</para>
+                                <para>Access via a website.</para>
                             </listitem>
                         </itemizedlist>
                     </para>
                 </listitem>
                 <listitem>
-                    <para>Recharge<indexterm>
-                            <primary>Recharge</primary>
-                            <secondary>Spécification</secondary>
+                    <para>Recharging<indexterm>
+                            <primary>Recharging</primary>
+                            <secondary>Specification</secondary>
                         </indexterm></para>
                     <para>
                         <itemizedlist>
                             <listitem>
-                                <para>Deux types de stations de charge</para>
+                                <para>Two types of charging stations</para>
                                 <para>
                                     <itemizedlist>
                                         <listitem>
-                                            <para>Station de recharge raccordée au réseau
-                                                électrique.</para>
+                                            <para>Charging station connected to the electricity
+                                                grid.</para>
                                         </listitem>
                                         <listitem>
-                                            <para>Station de recharge avec panneaux solaires et
-                                                éolienne (étape suivante).</para>
+                                            <para>Recharging station with solar panels and wind
+                                                turbine (next step).</para>
                                         </listitem>
                                     </itemizedlist>
                                 </para>
                             </listitem>
                             <listitem>
-                                <para>Temps de recharge avec raccordement au réseau: max 4h<indexterm>
-                                        <primary>Temps de recharge</primary>
-                                        <secondary>Spécification</secondary>
+                                <para>Recharge time with network connection: max 4h<indexterm>
+                                        <primary>Recharge time</primary>
+                                        <secondary>Specification</secondary>
                                     </indexterm></para>
                             </listitem>
                             <listitem>
-                                <para>Temps de recharge avec stations solaire et éolienne:
-                                    <?oxy_comment_start author="gcorbaz" timestamp="20170716T100640+0200" comment="Vérifier la faisabilité de ce temps de recharge"?>max
-                                    6h<?oxy_comment_end?></para>
+                                <para>Recharging time with solar or wind stations: max 6h</para>
                             </listitem>
                             <listitem>
-                                <para>Le robot rentre tout seul sur sa station de recharge.</para>
+                                <para>The robot automatically and alone returns to its charging
+                                    station.</para>
                             </listitem>
                             <listitem>
-                                <para>Lorsque le robot est raccordé à sa station de recharge, il
-                                    arrête tous les consommateurs électriques inutiles.</para>
+                                <para>When the robot is connected to its charging station, it stops
+                                    all unnecessary electrical consumers.</para>
                             </listitem>
                         </itemizedlist>
                     </para>
                 </listitem>
-                <listitem>
-                    <para/>
-                </listitem>
             </itemizedlist>
         </para>
-        <para>xxx</para>
     </section>
     <section>
-        <title>Detailed spacifications</title>
+        <title>Detailed specifications</title>
         <indexterm>
             <primary>Specifications</primary>
             <secondary>Detailed</secondary>
         </indexterm>
         <para/>
         <section>
-            <title>Résistance à l'avancement<indexterm>
-                    <primary>Résistance à l'avancement</primary>
+            <title>Resistance to advancement<indexterm>
+                    <primary>Resistance to advancement</primary>
                 </indexterm></title>
-            <para>La résistance à l'avancement dépends de deux facteurs:</para>
+            <para>The resistance to advancement depends on two factors:</para>
             <para>
                 <itemizedlist>
                     <listitem>
-                        <para>La résistance à l'avancement des roues</para>
+                        <para>Wheel forward resistance</para>
                     </listitem>
                     <listitem>
-                        <para>La pente à franchir</para>
+                        <para>The slope to be crossed</para>
                     </listitem>
                 </itemizedlist>
             </para>
-            <para>Les calculs ci-dessous donnent un odre de grandeur des forces, couples et
-                puissances en jeux. Cependant, ces valeurs seront à vérifier sur les
-                prototypes.</para>
+            <para>The calculations below give an order of magnitude of the forces, torques and
+                powers at play. However, these values will have to be checked and confirmed on the
+                prototypes, as they are based on worse case.</para>
             <section>
-                <title>Résistance des roues à l'avancement<indexterm>
-                        <primary>Résistance à l'avancement</primary>
-                        <secondary>Roues</secondary>
+                <title>Wheel resistance to driving<indexterm>
+                        <primary>Resistance to advancement</primary>
+                        <secondary>Wheel</secondary>
                     </indexterm></title>
-                <para>D'après <citation>wiki01</citation>, les calculs de résistance au roulement
-                    peuvent être simplifiés si le véhicule n'avance pas vite, ce qui est notre cas.
-                    N'ayant pas trouvé le coefficient de résistance au roulement pour un pneu sur
-                    l'herbe, nous prenons celui du sable, 0.3.</para>
+                <para>According to <citation>wiki01</citation>, rolling resistance calculations can
+                    be simplified if the vehicle does not move fast, which is our case. Not having
+                    found the rolling resistance coefficient for a tire on grass, we take the sand
+                    coefficient, 0.3.</para>
                 <figure>
-                    <title>Forces sur une roue</title>
+                    <title>Forces on a wheel</title>
                     <mediaobject>
                         <imageobject>
                             <imagedata fileref="resistance_roulement.png" align="center" width="4cm"
@@ -287,9 +267,9 @@
                         </imageobject>
                     </mediaobject>
                 </figure>
-                <para>La résistance au roulement est données par:</para>
+                <para>The rolling resistance is given by:</para>
                 <equation>
-                    <title>Résistance au roulement</title>
+                    <title>Rolling resistance</title>
                     <math xmlns="http://www.w3.org/1998/Math/MathML">
                         <msub>
                             <mi>F</mi>
@@ -314,7 +294,7 @@
                     </math>
                 </equation>
                 <equation>
-                    <title>Force de gravitation</title>
+                    <title>Gravitational force</title>
                     <math xmlns="http://www.w3.org/1998/Math/MathML">
                         <msub>
                             <mi>F</mi>
@@ -326,7 +306,7 @@
                         <mi>g</mi>
                     </math>
                 </equation>
-                <para>ou:</para>
+                <para>where:</para>
                 <para><inlineequation>
                         <math xmlns="http://www.w3.org/1998/Math/MathML">
                             <msub>
@@ -337,7 +317,7 @@
                                 </mrow>
                             </msub>
                         </math>
-                    </inlineequation>: force de résistance au roulement en N.</para>
+                    </inlineequation>: rolling resistance force in N.</para>
                 <para><inlineequation>
                         <math xmlns="http://www.w3.org/1998/Math/MathML">
                             <msub>
@@ -348,17 +328,17 @@
                                 </mrow>
                             </msub>
                         </math>
-                    </inlineequation>: coefficient de résistance au roulement.</para>
+                    </inlineequation>: rolling resistance coefficient..</para>
                 <para><inlineequation>
                         <math xmlns="http://www.w3.org/1998/Math/MathML">
                             <mi>m</mi>
                         </math>
-                    </inlineequation>: masse du véhicule (la tondeuse pour nous) en Kg.</para>
+                    </inlineequation>: .mass of the vehicle (the robot for us) in Kg.</para>
                 <para><inlineequation>
                         <math xmlns="http://www.w3.org/1998/Math/MathML">
                             <mi>g</mi>
                         </math>
-                    </inlineequation>: constante de gravitation, en <inlineequation>
+                    </inlineequation>: gravitational constant, in <inlineequation>
                         <math xmlns="http://www.w3.org/1998/Math/MathML">
                             <mfrac bevelled="true">
                                 <mi>m</mi>
@@ -369,7 +349,7 @@
                             </mfrac>
                         </math>
                     </inlineequation>.</para>
-                <para>Avec nos spécification, <inlineequation>
+                <para>With our specifications, <inlineequation>
                         <math xmlns="http://www.w3.org/1998/Math/MathML">
                             <msub>
                                 <mi>F</mi>
@@ -379,10 +359,12 @@
                                 </mrow>
                             </msub>
                         </math>
-                    </inlineequation> est, pour un véhicule à plat, toutes les roues sont identiques.<footnote>
-                        <para>On démontre aisément que cette force ne dépends pas du nombre de roues
-                            mais seulement du revêtement du sol et des roues.</para>
-                    </footnote> et que le poids est uniformément réparti:</para>
+                    </inlineequation> is, for a flat vehicle, with all wheels identical.<footnote>
+                        <para/>
+                        <para>It is easy to demonstrate that this force does not depend on the
+                            number of wheels but only on the surface of the floor and the
+                            wheels.</para>
+                    </footnote> and that the weight is evenly distributed:</para>
                 <para><inlineequation>
                         <math xmlns="http://www.w3.org/1998/Math/MathML">
                             <msub>
@@ -426,23 +408,23 @@
                     </inlineequation></para>
             </section>
             <section>
-                <title>Résistance totale<indexterm>
-                        <primary>Résistance à l'avancement</primary>
-                        <secondary>Totale</secondary>
+                <title>Total resistance<indexterm>
+                        <primary>Resistance to advancement</primary>
+                        <secondary>Total</secondary>
                     </indexterm></title>
-                <para>En tenant compte de la pente, le calcul est un peu plus complexe: il faut
-                    rajouter les composantes dues à la gravitation. De plus, la force de résistance
-                    au roulement diminue avec l'augmentation de la pente.</para>
+                <para>Taking into account the slope, the calculation is a little more complex: it is
+                    necessary to add the components due to gravitation. In addition, the rolling
+                    resistance force decreases with increasing slope..</para>
                 <figure xml:id="restot">
-                    <title>Résistance totale</title>
+                    <title>Total resistance</title>
                     <mediaobject>
                         <imageobject>
                             <imagedata fileref="resistance_totale.png" align="center" width="8cm"/>
                         </imageobject>
                     </mediaobject>
                 </figure>
-                <para>La résistance totale est due à la force de gravité et à la résistance au
-                    roulement, soir:</para>
+                <para>The total resistance is due to the force of gravity and rolling resistance,
+                    which is:</para>
                 <para><inlineequation>
                         <math xmlns="http://www.w3.org/1998/Math/MathML">
                             <msub>
@@ -472,7 +454,7 @@
                             </msub>
                         </math>
                     </inlineequation></para>
-                <para>ou</para>
+                <para>where</para>
                 <para><inlineequation>
                         <math xmlns="http://www.w3.org/1998/Math/MathML">
                             <msub>
@@ -483,7 +465,7 @@
                                 </mrow>
                             </msub>
                         </math>
-                    </inlineequation> est la force de résistance au roulement.</para>
+                    </inlineequation> is the rolling resistance force.</para>
                 <para><inlineequation>
                         <math xmlns="http://www.w3.org/1998/Math/MathML">
                             <msub>
@@ -494,7 +476,7 @@
                                 </mrow>
                             </msub>
                         </math>
-                    </inlineequation> est la force de résistance due à la gravitation.</para>
+                    </inlineequation> is the resistance force due to gravitation.</para>
                 <para><inlineequation>
                         <math xmlns="http://www.w3.org/1998/Math/MathML">
                             <msub>
@@ -506,12 +488,12 @@
                                 </mrow>
                             </msub>
                         </math>
-                    </inlineequation> est la force de résistance totale: celle que les moteurs
-                    doivent vaincre.</para>
-                <para>A partir du diagramme <xref linkend="restot"/> et du triangle des forces, on
-                    calcule:</para>
+                    </inlineequation> is the total resistance force: the one that the motors must
+                    overcome.</para>
+                <para>From the diagram <xref linkend="restot"/> and the triangle of forces, we
+                    calculate:</para>
                 <equation>
-                    <title>Résistance au roulement</title>
+                    <title>Rolling resistance</title>
                     <math xmlns="http://www.w3.org/1998/Math/MathML">
                         <msub>
                             <mi>F</mi>
@@ -554,7 +536,7 @@
                     </math>
                 </equation>
                 <equation>
-                    <title>Résistance de la gravité</title>
+                    <title>Gravity resistance</title>
                     <math xmlns="http://www.w3.org/1998/Math/MathML">
                         <msub>
                             <mi>F</mi>
@@ -576,7 +558,7 @@
                     </math>
                 </equation>
                 <equation>
-                    <title>Force de gravitation</title>
+                    <title>Gravitational force</title>
                     <math xmlns="http://www.w3.org/1998/Math/MathML">
                         <msub>
                             <mi>F</mi>
@@ -588,9 +570,9 @@
                         <mi>g</mi>
                     </math>
                 </equation>
-                <para>en remplaçant les termes, on obtient:</para>
+                <para>by replacing the terms, you get:</para>
                 <equation>
-                    <title>Résistance totale</title>
+                    <title>Total resistance</title>
                     <math xmlns="http://www.w3.org/1998/Math/MathML">
                         <msub>
                             <mi>F</mi>
@@ -684,10 +666,10 @@
                         </mfenced>
                     </math>
                 </equation>
-                <para>A partir des spécification générales, on calcule facilement la force de
-                    résistance totale dans l'herbe, pour une pente maximum de 45°.</para>
+                <para>From the general specifications, the total resistance force in the grass is
+                    easily calculated for a maximum slope of 45°.</para>
                 <equation>
-                    <title>Résistance maximum</title>
+                    <title>Maximum resistance</title>
                     <math xmlns="http://www.w3.org/1998/Math/MathML">
                         <msub>
                             <mi>F</mi>
@@ -732,27 +714,26 @@
                 </equation>
                 <para>
                     <note>
-                        <para>Les valeurs calculées ci-dessus correspondent aux forces maximum aux
-                            quelles le robot pourrait être confronté.</para>
+                        <para>The values calculated above correspond to the maximum forces with
+                            which the robot could be confronted.</para>
                     </note>
                 </para>
             </section>
         </section>
         <section>
-            <title>Diamètre des roues<indexterm>
-                    <primary>Diamètre des roues</primary>
+            <title>Wheel diameter<indexterm>
+                    <primary>Wheel diameter</primary>
                 </indexterm></title>
-            <para>Le diamètre des roues est conditionné par la garde au sol du châssis de la
-                tondeuse robot. On choisit des roues de 30cm de diamètre: cela permet de garantir la
-                distance au sol minimum requise dans les spécifications générales et laisse un peu
-                de marge pour la disposition des moteurs électriques de propulsion. Par ailleurs des
-                roues d'un diamètre de 30cm permettent l'utilisation de pneus gonflés (à faible
-                pression) ce qui rend le déplacement plus facile en terrain légèrement accidenté
-                comme c'est le cas dans les cultures.</para>
-            <para>La relation entre la vitesse de rotation est le rayon de la roue est données
-                par:</para>
+            <para>The diameter of the wheels is determined by the ground clearance of the robot
+                mower chassis. Wheels with a diameter of 30cm are chosen: this ensures the minimum
+                ground clearance required in the general specifications and leaves some room for the
+                layout of the electric propulsion motors. In addition, wheels with a diameter of
+                30cm allow the use of inflated tires (at low pressure) which makes it easier to
+                travel on slightly uneven ground such as in crops.</para>
+            <para>The relationship between the rotational speed and the wheel radius is given
+                by:</para>
             <equation>
-                <title>Vitesse en fonction de la vitesse de rotation</title>
+                <title>Speed as a function of rotation speed</title>
                 <math xmlns="http://www.w3.org/1998/Math/MathML">
                     <mi>V</mi>
                     <mo>=</mo>
@@ -765,14 +746,13 @@
                     <mi mathvariant="normal">&#x3C9;</mi>
                 </math>
             </equation>
-            <para>ou:</para>
-            <para>V: vitesse en m/s</para>
-            <para>r: rayon de la roue en m</para>
-            <para>ω: vitesse de rotation en rad/s</para>
-            <para>On peut calculer la vitesse de rotation à partir de la vitesse linéaire de la
-                manière suivante:</para>
+            <para>where:</para>
+            <para>V: speed in m/s</para>
+            <para>r: wheel radius in m</para>
+            <para>ω: rotational speed in rad/s</para>
+            <para>The rotational speed can be calculated from the linear speed as follows:</para>
             <equation>
-                <title>Vitesse de rotation en fonction de la vitesse</title>
+                <title>Rotational speed as a function of speed</title>
                 <math xmlns="http://www.w3.org/1998/Math/MathML">
                     <mi>&#x3C9;</mi>
                     <mo>=</mo>
@@ -782,7 +762,7 @@
                     </mfrac>
                 </math>
             </equation>
-            <para>soit, dans notre cas:</para>
+            <para>or, in our case:</para>
             <para><inlineequation>
                     <math xmlns="http://www.w3.org/1998/Math/MathML">
                         <mi>&#x3C9;</mi>
@@ -834,19 +814,17 @@
             <para/>
         </section>
         <section xml:id="couple">
-            <title>Couple de propulsion<indexterm>
+            <title>Propulsion torque<indexterm>
                     <primary>Propulsion</primary>
-                    <secondary>Couple</secondary>
+                    <secondary>Torque</secondary>
                 </indexterm></title>
-            <para>Le couple nécessaire dépend directement du diamètre des roues et de la force
-                maximum de résistance. La puissance, elle, dépend du couple et de la vitesse de
-                rotation des roues, ou de la vitesse d'avancement et de la force de
-                résistance.</para>
-            <para>La force totale nécessaire au déplacement est de 180N. Cependant, elle est
-                répartie de manière uniforme sur les 4 roues motrices. Elle est donc de 45N par
-                roue</para>
+            <para>The torque required depends directly on the diameter of the wheels and the maximum
+                resistance force. Power, on the other hand, depends on the torque and rotational
+                speed of the wheels, or on the forward speed and resistance force.</para>
+            <para>The total force required for the movement is 180N. However, it is evenly
+                distributed over all 4-wheel drive. It is therefore 45N per wheel</para>
             <equation>
-                <title>Couple maximum par moteur</title>
+                <title>Maximum torque per motor</title>
                 <math xmlns="http://www.w3.org/1998/Math/MathML">
                     <mi>T</mi>
                     <mo>=</mo>
@@ -873,18 +851,18 @@
                     <mi>m</mi>
                 </math>
             </equation>
-            <para>Ceci représente le couple total. Pour 4 moteurs, le couple par moteur est de
-                    <emphasis role="bold">6,75Nm</emphasis> au maximum.</para>
+            <para>This represents the total torque. For 4 motors, the torque per motor is a maximum
+                of <emphasis role="bold">6.75Nm</emphasis>.</para>
         </section>
         <section xml:id="puissance">
-            <title>Puissance de propulsion<indexterm>
+            <title>Propulsion power<indexterm>
                     <primary>Propulsion</primary>
-                    <secondary>Puissance</secondary>
+                    <secondary>Power</secondary>
                 </indexterm></title>
-            <para>La puissance nécessaire à propulser la tondeuse, en fonction des spécification de
-                base est:</para>
+            <para>The power required to propel the mower, according to the basic specifications,
+                is:</para>
             <equation>
-                <title>Puissance nécessaire</title>
+                <title>Required power</title>
                 <math xmlns="http://www.w3.org/1998/Math/MathML">
                     <mi>P</mi>
                     <mo>=</mo>
@@ -910,50 +888,43 @@
                     <mi>W</mi>
                 </math>
             </equation>
-            <?oxy_comment_start author="gcorbaz" timestamp="20170714T170143+0200" comment="Ajouter le rendement des moteurs pour calculer le courant"?>
-            <para>Avec 4 moteurs de propulsion, chaue moteur doit avoir une puissance de <inlineequation>
-                    <math xmlns="http://www.w3.org/1998/Math/MathML">
-                        <mn>22</mn>
-                        <mo>,</mo>
-                        <mn>5</mn>
-                        <mi>W</mi>
-                        <mo>&#x2245;</mo>
-                        <mn>25</mn>
-                        <mi>W</mi>
-                    </math>
-                </inlineequation> par moteur.<?oxy_comment_end?></para>
+            <para>With 4 propulsion engines, each engine must have a power of <emphasis role="bold"
+                    >22.5W≅25W</emphasis> per engine.<footnote>
+                    <para>with the assumption that the motors and their controls have an efficiency
+                        close to 100%.</para>
+                </footnote></para>
             <para>
                 <table frame="all">
-                    <title>Caractéristiques de moteurs de propulsion</title>
+                    <title>Characteristics of propulsion engines</title>
                     <tgroup cols="3">
                         <colspec colname="c1" colnum="1" colwidth="1*"/>
                         <colspec colname="c2" colnum="2" colwidth="1*"/>
                         <colspec colname="c3" colnum="3" colwidth="1*"/>
                         <thead>
                             <row>
-                                <entry>Libellé</entry>
-                                <entry>Valeur</entry>
-                                <entry>Commentaire</entry>
+                                <entry/>
+                                <entry>Value</entry>
+                                <entry>Comment</entry>
                             </row>
                         </thead>
                         <tbody>
                             <row>
-                                <entry>Puissance</entry>
+                                <entry>Power</entry>
                                 <entry>25W</entry>
                                 <entry/>
                             </row>
                             <row>
-                                <entry>Couple</entry>
+                                <entry>Torque</entry>
                                 <entry>6,75Nm</entry>
                                 <entry/>
                             </row>
                             <row>
-                                <entry>Vitesse de rotation</entry>
+                                <entry>Rotational speed</entry>
                                 <entry>60t/min</entry>
                                 <entry>avec réducteur</entry>
                             </row>
                             <row>
-                                <entry><?oxy_comment_start author="gcorbaz" timestamp="20170728T111448+0200" comment="A valider"?>Alimentation<?oxy_comment_end?></entry>
+                                <entry>Power supply</entry>
                                 <entry>12 ou 24 V</entry>
                                 <entry/>
                             </row>
@@ -963,81 +934,27 @@
             </para>
         </section>
         <section>
-            <title>Puissance de coupe<indexterm>
-                    <primary>Coupe</primary>
-                    <secondary>Puissance</secondary>
+            <title>Power for accessories<indexterm>
+                    <primary>Accessories</primary>
+                    <secondary>Power</secondary>
                 </indexterm></title>
-            <para>La puissance de coupe est plus difficile à estimmer. Nos avons procédé à du
-                reverse engineering sur des tondeuses existantes. Pour un couteau à 4 lames de 30cm
-                de diamètre, il faut un moteur électrique de 100W tournant à 3000t/min.</para>
-            <para>Pour une largeur de coupe de 60cm, on a le choix entre deux hélices de 30cm de
-                diamètre chacune, ou 3 hélices de 20cm de diamètre. Afin de diminuer l'encombrement
-                longitudinal, nous choisissons dtrois hélices de 20cm de diamètre.</para>
-            <para>A partir des données de reverse engineering ci-dessus, et en appliquant une règle
-                de trois, nous avons besoin de 60W par moteur d'hélice, ce qui fait un total de
-                    <emphasis role="bold">180W</emphasis>.</para>
-            <para/>
-            <caution>
-                <para>Cette méthode de calcul est empirique et les puissances nécessaires devront
-                    être mesurées et validées lors de la réalisation du prototype.</para>
-            </caution>
-            <para>On pourra, par exemple, diminuer la vitesse d'avancement du robot si l'herbe est
-                trop dense: de cette manière, on limitera la puissance consommée.</para>
-            <para>
-                <table frame="all">
-                    <title>Caractéristique des moteurs de coupe</title>
-                    <tgroup cols="3">
-                        <colspec colname="c1" colnum="1" colwidth="1*"/>
-                        <colspec colname="c2" colnum="2" colwidth="1*"/>
-                        <colspec colname="c3" colnum="3" colwidth="1*"/>
-                        <thead>
-                            <row>
-                                <entry>Libellé</entry>
-                                <entry>Valeur</entry>
-                                <entry>Commentaire</entry>
-                            </row>
-                        </thead>
-                        <tbody>
-                            <row>
-                                <entry>Puissance</entry>
-                                <entry>60W</entry>
-                                <entry/>
-                            </row>
-                            <row>
-                                <entry>Couple</entry>
-                                <entry/>
-                                <entry/>
-                            </row>
-                            <row>
-                                <entry>Vitesse de rotation</entry>
-                                <entry>3000 t/min</entry>
-                                <entry>Avec un diamètre des couteaux plus faible, une vitesse de
-                                    rotation plus élevée est probablement nécessaire.</entry>
-                            </row>
-                            <row>
-                                <entry><?oxy_comment_start author="gcorbaz" timestamp="20170728T111448+0200" comment="A valider"?>Alimentation<?oxy_comment_end?></entry>
-                                <entry>12 ou 24 V</entry>
-                                <entry/>
-                            </row>
-                        </tbody>
-                    </tgroup>
-                </table>
-            </para>
+            <para>We reserve 180W of power for connecting accessories, such as cutter bar, arm, etc.
+                to the robot.</para>
         </section>
         <section>
-            <title>Batterie<indexterm>
-                    <primary>Batterie</primary>
+            <title>Battery pack<indexterm>
+                    <primary>Battery pack</primary>
                 </indexterm></title>
-            <para>Pour estimer la capacité de la batterie, on part de l'autonomie du robot, 4h, et
-                de la puissance électrique totale nécessaire, à savoir la puissance de coupe et la
-                puissance de propulsion.</para>
+            <para>To estimate the battery capacity, we start from the robot's autonomy, 4 hours, and
+                the total electrical power required, namely the power of the accessories and the
+                propulsion power.</para>
             <para>
                 <itemizedlist>
                     <listitem>
-                        <para>Autonomie: 4h</para>
+                        <para>Autonomy: 4h</para>
                     </listitem>
                     <listitem>
-                        <para>Puissance totale: <inlineequation>
+                        <para>Total power: <inlineequation>
                                 <math xmlns="http://www.w3.org/1998/Math/MathML">
                                     <mn>90</mn>
                                     <mi>W</mi>
@@ -1052,14 +969,14 @@
                     </listitem>
                 </itemizedlist>
             </para>
-            <para>Des batteries 12V ou 24V sont envisageables. Les capacité<indexterm>
-                    <primary>Capacité de la batterie</primary>
-                </indexterm> nécessaires sont:</para>
+            <para>12V or 24V batteries are possible. The necessary capacities  are:<indexterm>
+                    <primary>Battery capacity</primary>
+                </indexterm></para>
             <para>
                 <table frame="all">
-                    <title>Capacité de la batterie<indexterm>
-                            <primary>Batterie</primary>
-                            <secondary>Capacité</secondary>
+                    <title>Battery capacity<indexterm>
+                            <primary>Battery&lt;</primary>
+                            <secondary>Capacity</secondary>
                         </indexterm></title>
                     <tgroup cols="4">
                         <colspec colname="c1" colnum="1" colwidth="1*"/>
@@ -1068,10 +985,10 @@
                         <colspec colname="c4" colnum="4" colwidth="1*"/>
                         <thead>
                             <row>
-                                <entry>Tension nominale</entry>
-                                <entry>Puissance</entry>
-                                <entry>Courant</entry>
-                                <entry>Capacité</entry>
+                                <entry>Nominal voltage</entry>
+                                <entry>Power</entry>
+                                <entry>Current</entry>
+                                <entry>Capacity</entry>
                             </row>
                         </thead>
                         <tbody>
@@ -1093,10 +1010,10 @@
             </para>
             <para>
                 <warning>
-                    <para>Dans les estimations ci-dessus, nous n'avons pas tenu compte du rendement
-                        des moteurs, circuits électroniques, etc. Par contre, nous avons calculé la
-                        capacité nécessaire en utilisant la puissance maximum en continu, ce qui ne
-                        sera pas toujours le cas.</para>
+                    <para>In the above estimates, we did not take into account the efficiency of
+                        motors, electronic circuits, etc. However, we have calculated the necessary
+                        capacity using the maximum continuous power, which will not always be the
+                        case.</para>
                 </warning>
             </para>
             <para/>
