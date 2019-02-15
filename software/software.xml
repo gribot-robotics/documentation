@@ -13,7 +13,7 @@
                 <primary>Security</primary>
             </indexterm></title>
         <para>Security is a critical feature that must be implemented in the robot, as it will be
-            conencted to the Internet to be remotely accessible, for software upgrade, remote
+            connected to the Internet to be remotely accessible, for software upgrade, remote
             maintenance, remote operations, etc.</para>
     </section>
 </chapter>
