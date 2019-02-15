@@ -4,28 +4,27 @@
 <chapter xmlns="http://docbook.org/ns/docbook"
     xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
      <title>Architecture</title>
-     <para>Le robot tondeuse est constitué de différents éléments mécaniques, électroniques et
-        logiciels. Les différents paragraphes ci-dessous donnent les détails de chaque
-        élément.</para>
+     <para>The mower robot consists of various mechanical, electronic and software components. The
+        following paragraphs provide details of each element.</para>
     <section>
-        <title>Conception mécanique<indexterm>
-                <primary>Conception mécanique</primary>
+        <title>Mechanical design<indexterm>
+                <primary>Mechanical design</primary>
             </indexterm></title>
-        <para>A faire</para>
+        <para>To be done</para>
         <section>
-            <title>Châssis<indexterm>
-                    <primary>Châssis</primary>
+            <title>Chassis<indexterm>
+                    <primary>Chassis</primary>
                 </indexterm></title>
-            <para>A faire</para>
+            <para>To be done</para>
             <section>
-                <title>Roues<indexterm>
+                <title>Wheels<indexterm>
                         <primary>Roues</primary>
                     </indexterm></title>
-                <para>La tondeuse dispose de 4 roues de 30cm de diamètre. </para>
+                <para>To be done</para>
             </section>
         </section>
         <section>
-            <title>Carrosserie<indexterm>
+            <title>Bodywork<indexterm>
                     <primary>Carrosserie</primary>
                 </indexterm></title>
             <para>A faire</para>
@@ -34,64 +33,58 @@
             <title>Propulsion<indexterm>
                     <primary>Propulsion</primary>
                 </indexterm></title>
-            <para>La propulsion est assurée par quatre moteurs électriques de 25W chacun au minimum
-                (voir <xref linkend="puissance"/> et <xref linkend="couple"/>). Les caractéristiques
-                des ces moteurs sont:</para>
+            <para>Propulsion is provided by four electric motors of at least 25W each (see <xref
+                    linkend="puissance"/> and <xref linkend="couple"/>). The characteristics of
+                these engines are:</para>
             <para>
                 <itemizedlist>
                     <listitem>
-                        <para>Puissance: 22,5W</para>
+                        <para>Power: 22,5W</para>
                     </listitem>
                     <listitem>
-                        <para>Couple: 6,75 Nm</para>
+                        <para>Torque: 6,75 Nm</para>
                     </listitem>
                     <listitem>
-                        <para>Vitesse de rotation: 33 t/min</para>
+                        <para>Rotational speed: 33 t/min</para>
                     </listitem>
                 </itemizedlist>
             </para>
-            <para>Par ailleurs, le moteur comportera un encodeur, pour mesurer le nombre de tours
-                effectués, ainsi qu'un réducteur.</para>
+            <para>In addition, the motor will include an encoder, to measure the number of
+                revolutions performed, as well as a gearbox..</para>
             <section>
-                <title>Moteur<indexterm>
-                        <primary>Moteur</primary>
+                <title>Engine<indexterm>
+                        <primary>Engine</primary>
                         <secondary>Propulsion</secondary>
                     </indexterm></title>
-                <para>Moteur brushless à encodeur</para>
+                <para>Brushless engine with encodeur.</para>
             </section>
             <section>
-                <title>Réducteur<indexterm>
-                        <primary>Réducteur</primary>
+                <title>Gearbox<indexterm>
+                        <primary>Gearbox</primary>
                         <secondary>Propulsion</secondary>
                     </indexterm></title>
-                <para></para>
+                <para>To be done</para>
             </section>
             <section>
                 <title>Encodeur<indexterm>
                         <primary>Encodeur</primary>
                         <secondary>Propulsion</secondary>
                     </indexterm></title>
-                <para>L'encodeur permet de compter le nombre de tours effectivement réalisés par le
-                    moteur. En connaissant le rapport de réduction du réducteur ainsi que le
-                    diamètre des roues, on en tire rapidement la distance parcourue.</para>
+                <para>The encoder allows you to count the number of revolutions actually performed
+                    by the motor. By knowing the reduction ratio of the gearbox and the diameter of
+                    the wheels, we can quickly determine the distance covered.</para>
             </section>
-        </section>
-        <section>
-            <title>Coupe<indexterm>
-                    <primary>Coupe</primary>
-                </indexterm></title>
-            <para>Moteur brushless à encodeur.</para>
         </section>
     </section>
     <section>
-        <title>Architecture électronique<indexterm>
+        <title>Electronic<indexterm>
                 <primary>Architecture</primary>
                 <secondary>Électronique</secondary>
             </indexterm></title>
-        <para>L'électronique de commande est constituées de plusieurs blocs distincts, comme le
-            montre le schéma ci-dessous.</para>
+        <para>The control electronics are made up of several separate blocks, as shown in the
+            diagram below.</para>
         <figure>
-            <title>Architecture de la commande du robot</title>
+            <title>Robot control architecture</title>
             <mediaobject>
                 <imageobject>
                     <imagedata fileref="architecture.png" align="center"/>
@@ -101,56 +94,56 @@
         
         <para></para>
         <section>
-            <title>Contrôleur de moteur de propulsion</title>
-            <para>A faire</para>
+            <title>Propulsion engine controller</title>
+            <para>To be done</para>
         </section>
         <section>
-            <title>Contrôleur de moteur de coupe</title>
-            <para>A faire</para>
+            <title>Accessories engine controller</title>
+            <para>To be done</para>
         </section>
         <section>
             <title>Lidar</title>
-            <para>A faire</para>
+            <para>To be done</para>
         </section>
         <section>
             <title>GPS</title>
-            <para>A faire</para>
+            <para>To be done</para>
         </section>
         <section>
-            <title>Contacts de proximité</title>
-            <para>A faire</para>
+            <title>Local contacts</title>
+            <para>To be done</para>
         </section>
         <section>
-            <title>Batterie</title>
-            <para>A faire</para>
+            <title>Battery</title>
+            <para>To be done</para>
         </section>
         <section>
-            <title>Ordinateur embarqué</title>
-            <para>A faire</para>
+            <title>On-board computer</title>
+            <para>To be done</para>
         </section>
         <section>
-            <title>Capteurs de situation</title>
-            <para>Accéléromètre, gyroscope, magnétomètre</para>
+            <title>Attitude sensors</title>
+            <para>Accelerometer, gyroscope, magnetometer</para>
         </section>
         <section>
             <title>Communication</title>
-            <para>WiFi, GSM</para>
+            <para>WiFi, GSM, IP</para>
         </section>
     </section>
     <section>
-        <title>Architecture informatique<indexterm>
+        <title>Software architecture<indexterm>
                 <primary>Architecture</primary>
-                <secondary>Informatique</secondary>
+                <secondary>Software</secondary>
             </indexterm></title>
-        <para>Le logiciel du robot tondeuse fonctionne sur un Raspberri Pi III. Il est constitué des
-            deux importantes briques suivantes:</para>
+        <para>The robot software runs on a Raspberri Pi III. It consists of the following two
+            important bricks::</para>
         <para>
             <itemizedlist>
                 <listitem>
-                    <para>Le système d'exploitation Linux Ubuntu</para>
+                    <para>Operating system: Linux Ubuntu.</para>
                 </listitem>
                 <listitem>
-                    <para>L'environnement de robotique ROS (Robot Operating System).</para>
+                    <para>ROS (Robot Operating System).</para>
                 </listitem>
             </itemizedlist>
         </para>
