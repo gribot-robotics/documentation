@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://docbook.org/xml/5.1/rng/docbook.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://docbook.org/xml/5.1/sch/docbook.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<chapter xmlns="http://docbook.org/ns/docbook"
+    xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
+     <title>Introduction</title>
+    <para>We very often talk about precision farming and agricultural automation. However, most of
+        these projects consist in improving the traditional way of doing things, without radically
+        changing it. As an example, grass management in crops such as vines, fruit trees, or plot
+        ends is done in a very traditional way: with a tractor and mower or gyro mower, and with
+        weed killers for areas that are not or not easily accessible by machines. The same problem
+        can be found in the maintenance of roadsides or large non-agricultural grassy areas.</para>
+    <section>
+        <title>Objectifs du robot tondeuse</title>
+        <para>This mower robot is part of a sustainable development approach. The objectives
+            are:</para>
+        <para>
+            <itemizedlist>
+                <listitem>
+                    <para>Eliminate the use of polluting herbicides that are harmful to health and
+                        nature.</para>
+                </listitem>
+                <listitem>
+                    <para>Reduce CO<subscript>2</subscript> emissions by not using fossil and
+                        non-renewable fuels.</para>
+                </listitem>
+                <listitem>
+                    <para>Reduce operating costs.</para>
+                    <para>In order to be able to quickly integrate into a sustainable development
+                        logic, the robot's plans and software are distributed under the GNU General
+                        Public License (GPL), including the elements we buy ready-made, such as
+                        engines, LIDAR, electronic circuits, etc. that are under the manufacturer's license<footnote>
+                            <para>These elements may be under proprietary license.</para>
+                        </footnote>.</para>
+                    <para>The robot can also be sold completely assembled, or as a kit either
+                        complete or partial. The partial kit includes, for example, elements
+                        machined specifically for the robot.</para>
+                    <para>All plans and software are freely available on the Internet.</para>
+                </listitem>
+            </itemizedlist>
+        </para>
+    </section>
+</chapter>
+

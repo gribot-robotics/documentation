@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://docbook.org/xml/5.1/rng/docbook.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://docbook.org/xml/5.1/sch/docbook.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<chapter xmlns="http://docbook.org/ns/docbook"
+    xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
+     <title>Software<indexterm>
+            <primary>Software</primary>
+        </indexterm></title>
+     <para/>
+    <para/>
+    <section>
+        <title>Security<indexterm>
+                <primary>Security</primary>
+            </indexterm></title>
+        <para>Security is a critical feature that must be implemented in the robot, as it will be
+            connected to the Internet to be remotely accessible, for software upgrade, remote
+            maintenance, remote operations, etc.</para>
+    </section>
+</chapter>
+

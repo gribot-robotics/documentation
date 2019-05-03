@@ -1,0 +1,1022 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://docbook.org/xml/5.1/rng/docbook.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://docbook.org/xml/5.1/sch/docbook.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<chapter xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink"
+    version="5.1">
+    <title>Specifications</title>
+    <indexterm>
+        <primary>Specifications</primary>
+    </indexterm>
+    <para>This chapter describes the general and detailed specifications of the robot
+        lawnmower.</para>
+    <section>
+        <title>General specifications</title>
+        <indexterm>
+            <primary>Specifications</primary>
+            <secondary>General</secondary>
+        </indexterm>
+        <para>General specifications are the following:</para>
+        <para>
+            <itemizedlist>
+                <listitem>
+                    <para>Weight: 25 kg (±20%)</para>
+                    <indexterm>
+                        <primary>Weight</primary>
+                        <secondary>Specifications</secondary>
+                    </indexterm>
+                </listitem>
+                <listitem>
+                    <para>Working width: 60cm</para>
+                    <indexterm>
+                        <primary>Working width</primary>
+                        <secondary>Specifications</secondary>
+                    </indexterm>
+                </listitem>
+                <listitem>
+                    <para>Maximum working speed: 1,8 km/h, that is 0.5 m/s.</para>
+                    <indexterm>
+                        <primary>Working speed</primary>
+                        <secondary>Specification</secondary>
+                    </indexterm>
+                </listitem>
+                <listitem>
+                    <para>Travel speed: 1,8 km/h</para>
+                    <indexterm>
+                        <primary>Travel speed</primary>
+                        <secondary>Specification</secondary>
+                    </indexterm>
+                </listitem>
+                <listitem>
+                    <para>Minimum treatable area: 20'000 m<superscript>2</superscript></para>
+                    <indexterm>
+                        <primary>Treatable area</primary>
+                        <secondary>Specification</secondary>
+                    </indexterm>
+                </listitem>
+                <listitem>
+                    <para>Delimitation of the surface to be treated by GPS RTK (Real Time
+                        Kinematic). Installation of a wire is excluded.</para>
+                    <indexterm>
+                        <primary>Surface boundary</primary>
+                        <secondary>Specification</secondary>
+                    </indexterm>
+                </listitem>
+                <listitem>
+                    <para>Ground clearance (chassis to ground distance): min 10cm</para>
+                    <indexterm>
+                        <primary>Ground clearance</primary>
+                        <secondary>Specification</secondary>
+                    </indexterm>
+                </listitem>
+                <listitem>
+                    <para>Autonomy: 4h minimum.</para>
+                    <indexterm>
+                        <primary>Autonomy</primary>
+                        <secondary>Specification</secondary>
+                    </indexterm>
+                </listitem>
+                <listitem>
+                    <para>Autonomous navigation and obstacle avoidance.</para>
+                    <indexterm>
+                        <primary>Navigation</primary>
+                        <secondary>Specification</secondary>
+                    </indexterm>
+                </listitem>
+                <listitem>
+                    <para>Trajectory optimization strategy to save battery power.</para>
+                </listitem>
+                <listitem>
+                    <para>Minimum passable obstacle height: 10cm.</para>
+                    <para>
+                        <itemizedlist>
+                            <listitem>
+                                <para>Maximum crossable slope: 45°.</para>
+                            </listitem>
+                        </itemizedlist>
+                    </para>
+                    <indexterm>
+                        <primary>Crossing height</primary>
+                        <secondary>Specification</secondary>
+                    </indexterm>
+                </listitem>
+                <listitem>
+                    <para>Safety and protection of users and animals.</para>
+                    <indexterm>
+                        <primary>Security</primary>
+                        <secondary>Specification</secondary>
+                    </indexterm>
+                    <para>
+                        <itemizedlist>
+                            <listitem>
+                                <para>Users and animals must not be allowed to come into contact with sharp parts (e. g. mower knives).</para>
+                            </listitem>
+                            <listitem>
+                                <para>The machine must stop when someone approaches too
+                                    close.</para>
+                            </listitem>
+                            <listitem>
+                                <para>Cutting elements (e.g. mower knives) must stop if the machine
+                                    tilts too much.</para>
+                            </listitem>
+                            <listitem>
+                                <para>The machine must stop completely and go into alarm if it
+                                    overturns.</para>
+                            </listitem>
+                            <listitem>
+                                <para>The machine must stop completely and go into alarm if it is
+                                    blocked.</para>
+                            </listitem>
+                        </itemizedlist>
+                    </para>
+                </listitem>
+                <listitem>
+                    <para>Security and remote access</para>
+                    <para>
+                        <itemizedlist>
+                            <listitem>
+                                <para>System must be protected against unauthorized remote
+                                    access.</para>
+                            </listitem>
+                            <listitem>
+                                <para>Only user who need to access the robot will be allowed to
+                                    access it.</para>
+                            </listitem>
+                            <listitem>
+                                <para>Robot ownership must be tracked: if the owner sell his robot
+                                    to someone else, a mechanism has to be put in place to track
+                                    this transaction. All access right and ownership parameters have
+                                    to be transmitted to the new owner.</para>
+                            </listitem>
+                        </itemizedlist>
+                    </para>
+                </listitem>
+                <listitem>
+                    <para>Remote access</para>
+                    <indexterm>
+                        <primary>Remote access</primary>
+                        <secondary>Specification</secondary>
+                    </indexterm>
+                    <para>
+                        <itemizedlist>
+                            <listitem>
+                                <para>Robot activation/deactivation.</para>
+                            </listitem>
+                            <listitem>
+                                <para>Status information.</para>
+                            </listitem>
+                            <listitem>
+                                <para>Position information.</para>
+                            </listitem>
+                            <listitem>
+                                <para>Programming the operating area.</para>
+                            </listitem>
+                            <listitem>
+                                <para>Access via an application on a mobile phone.</para>
+                            </listitem>
+                            <listitem>
+                                <para>Access via a website.</para>
+                            </listitem>
+                        </itemizedlist>
+                    </para>
+                </listitem>
+                <listitem>
+                    <para>Recharging<indexterm>
+                            <primary>Recharging</primary>
+                            <secondary>Specification</secondary>
+                        </indexterm></para>
+                    <para>
+                        <itemizedlist>
+                            <listitem>
+                                <para>Two types of charging stations</para>
+                                <para>
+                                    <itemizedlist>
+                                        <listitem>
+                                            <para>Charging station connected to the electricity
+                                                grid.</para>
+                                        </listitem>
+                                        <listitem>
+                                            <para>Recharging station with solar panels and wind
+                                                turbine (next step).</para>
+                                        </listitem>
+                                    </itemizedlist>
+                                </para>
+                            </listitem>
+                            <listitem>
+                                <para>Recharge time with network connection: max 4h<indexterm>
+                                        <primary>Recharge time</primary>
+                                        <secondary>Specification</secondary>
+                                    </indexterm></para>
+                            </listitem>
+                            <listitem>
+                                <para>Recharging time with solar or wind stations: max 6h</para>
+                            </listitem>
+                            <listitem>
+                                <para>The robot automatically and alone returns to its charging
+                                    station.</para>
+                            </listitem>
+                            <listitem>
+                                <para>When the robot is connected to its charging station, it stops
+                                    all unnecessary electrical consumers.</para>
+                            </listitem>
+                        </itemizedlist>
+                    </para>
+                </listitem>
+            </itemizedlist>
+        </para>
+    </section>
+    <section>
+        <title>Detailed specifications</title>
+        <indexterm>
+            <primary>Specifications</primary>
+            <secondary>Detailed</secondary>
+        </indexterm>
+        <para/>
+        <section>
+            <title>Resistance to advancement<indexterm>
+                    <primary>Resistance to advancement</primary>
+                </indexterm></title>
+            <para>The resistance to advancement depends on two factors:</para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Wheel forward resistance</para>
+                    </listitem>
+                    <listitem>
+                        <para>The slope to be crossed</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>The calculations below give an order of magnitude of the forces, torques and
+                powers at play. However, these values will have to be checked and confirmed on the
+                prototypes, as they are based on worse case.</para>
+            <section>
+                <title>Wheel resistance to driving<indexterm>
+                        <primary>Resistance to advancement</primary>
+                        <secondary>Wheel</secondary>
+                    </indexterm></title>
+                <para>According to <citation>wiki01</citation>, rolling resistance calculations can
+                    be simplified if the vehicle does not move fast, which is our case. Not having
+                    found the rolling resistance coefficient for a tire on grass, we take the sand
+                    coefficient, 0.3.</para>
+                <figure>
+                    <title>Forces on a wheel</title>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata fileref="resistance_roulement.png" align="center" width="4cm"
+                            />
+                        </imageobject>
+                    </mediaobject>
+                </figure>
+                <para>The rolling resistance is given by:</para>
+                <equation>
+                    <title>Rolling resistance</title>
+                    <math xmlns="http://www.w3.org/1998/Math/MathML">
+                        <msub>
+                            <mi>F</mi>
+                            <mrow>
+                                <mi>r</mi>
+                                <mi>r</mi>
+                            </mrow>
+                        </msub>
+                        <mo>=</mo>
+                        <msub>
+                            <mi>C</mi>
+                            <mrow>
+                                <mi>r</mi>
+                                <mi>r</mi>
+                            </mrow>
+                        </msub>
+                        <mo>&#xB7;</mo>
+                        <msub>
+                            <mi>F</mi>
+                            <mi>g</mi>
+                        </msub>
+                    </math>
+                </equation>
+                <equation>
+                    <title>Gravitational force</title>
+                    <math xmlns="http://www.w3.org/1998/Math/MathML">
+                        <msub>
+                            <mi>F</mi>
+                            <mi>g</mi>
+                        </msub>
+                        <mo>=</mo>
+                        <mi>m</mi>
+                        <mo>&#xB7;</mo>
+                        <mi>g</mi>
+                    </math>
+                </equation>
+                <para>where:</para>
+                <para><inlineequation>
+                        <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <msub>
+                                <mi>F</mi>
+                                <mrow>
+                                    <mi>r</mi>
+                                    <mi>r</mi>
+                                </mrow>
+                            </msub>
+                        </math>
+                    </inlineequation>: rolling resistance force in N.</para>
+                <para><inlineequation>
+                        <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <msub>
+                                <mi>C</mi>
+                                <mrow>
+                                    <mi>r</mi>
+                                    <mi>r</mi>
+                                </mrow>
+                            </msub>
+                        </math>
+                    </inlineequation>: rolling resistance coefficient..</para>
+                <para><inlineequation>
+                        <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <mi>m</mi>
+                        </math>
+                    </inlineequation>: .mass of the vehicle (the robot for us) in Kg.</para>
+                <para><inlineequation>
+                        <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <mi>g</mi>
+                        </math>
+                    </inlineequation>: gravitational constant, in <inlineequation>
+                        <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <mfrac bevelled="true">
+                                <mi>m</mi>
+                                <msup>
+                                    <mi>s</mi>
+                                    <mn>2</mn>
+                                </msup>
+                            </mfrac>
+                        </math>
+                    </inlineequation>.</para>
+                <para>With our specifications, <inlineequation>
+                        <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <msub>
+                                <mi>F</mi>
+                                <mrow>
+                                    <mi>r</mi>
+                                    <mi>r</mi>
+                                </mrow>
+                            </msub>
+                        </math>
+                    </inlineequation> is, for a flat vehicle, with all wheels identical.<footnote>
+                        <para/>
+                        <para>It is easy to demonstrate that this force does not depend on the
+                            number of wheels but only on the surface of the floor and the
+                            wheels.</para>
+                    </footnote> and that the weight is evenly distributed:</para>
+                <para><inlineequation>
+                        <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <msub>
+                                <mi>F</mi>
+                                <mrow>
+                                    <mi>r</mi>
+                                    <mi>r</mi>
+                                </mrow>
+                            </msub>
+                            <mo>=</mo>
+                            <msub>
+                                <mi>C</mi>
+                                <mrow>
+                                    <mi>r</mi>
+                                    <mi>r</mi>
+                                </mrow>
+                            </msub>
+                            <mo>&#xB7;</mo>
+                            <mi>m</mi>
+                            <mo>&#xB7;</mo>
+                            <mi>g</mi>
+                            <mo>=</mo>
+                            <mn>20</mn>
+                            <mo>&#xB7;</mo>
+                            <mn>9</mn>
+                            <mo>.</mo>
+                            <mn>81</mn>
+                            <mo>&#xB7;</mo>
+                            <mn>0</mn>
+                            <mo>,</mo>
+                            <mn>3</mn>
+                            <mo>=</mo>
+                            <mn>58</mn>
+                            <mo>,</mo>
+                            <mn>8</mn>
+                            <mi>N</mi>
+                            <mo>&#x2245;</mo>
+                            <mn>60</mn>
+                            <mi>N</mi>
+                        </math>
+                    </inlineequation></para>
+            </section>
+            <section>
+                <title>Total resistance<indexterm>
+                        <primary>Resistance to advancement</primary>
+                        <secondary>Total</secondary>
+                    </indexterm></title>
+                <para>Taking into account the slope, the calculation is a little more complex: it is
+                    necessary to add the components due to gravitation. In addition, the rolling
+                    resistance force decreases with increasing slope..</para>
+                <figure xml:id="restot">
+                    <title>Total resistance</title>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata fileref="resistance_totale.png" align="center" width="8cm"/>
+                        </imageobject>
+                    </mediaobject>
+                </figure>
+                <para>The total resistance is due to the force of gravity and rolling resistance,
+                    which is:</para>
+                <para><inlineequation>
+                        <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <msub>
+                                <mi>F</mi>
+                                <mrow>
+                                    <mi>r</mi>
+                                    <mi>t</mi>
+                                    <mi>o</mi>
+                                    <mi>t</mi>
+                                </mrow>
+                            </msub>
+                            <mo>=</mo>
+                            <msub>
+                                <mi>F</mi>
+                                <mrow>
+                                    <mi>r</mi>
+                                    <mi>r</mi>
+                                </mrow>
+                            </msub>
+                            <mo>+</mo>
+                            <msub>
+                                <mi>F</mi>
+                                <mrow>
+                                    <mi>r</mi>
+                                    <mi>g</mi>
+                                </mrow>
+                            </msub>
+                        </math>
+                    </inlineequation></para>
+                <para>where</para>
+                <para><inlineequation>
+                        <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <msub>
+                                <mi>F</mi>
+                                <mrow>
+                                    <mi>r</mi>
+                                    <mi>r</mi>
+                                </mrow>
+                            </msub>
+                        </math>
+                    </inlineequation> is the rolling resistance force.</para>
+                <para><inlineequation>
+                        <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <msub>
+                                <mi>F</mi>
+                                <mrow>
+                                    <mi>r</mi>
+                                    <mi>g</mi>
+                                </mrow>
+                            </msub>
+                        </math>
+                    </inlineequation> is the resistance force due to gravitation.</para>
+                <para><inlineequation>
+                        <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <msub>
+                                <mi>F</mi>
+                                <mrow>
+                                    <mi>r</mi>
+                                    <mi>o</mi>
+                                    <mi>t</mi>
+                                </mrow>
+                            </msub>
+                        </math>
+                    </inlineequation> is the total resistance force: the one that the motors must
+                    overcome.</para>
+                <para>From the diagram <xref linkend="restot"/> and the triangle of forces, we
+                    calculate:</para>
+                <equation>
+                    <title>Rolling resistance</title>
+                    <math xmlns="http://www.w3.org/1998/Math/MathML">
+                        <msub>
+                            <mi>F</mi>
+                            <mrow>
+                                <mi>r</mi>
+                                <mi>r</mi>
+                            </mrow>
+                        </msub>
+                        <mo>=</mo>
+                        <msub>
+                            <mi>C</mi>
+                            <mrow>
+                                <mi>r</mi>
+                                <mi>r</mi>
+                            </mrow>
+                        </msub>
+                        <mo>&#xB7;</mo>
+                        <msub>
+                            <mi>F</mi>
+                            <mi>p</mi>
+                        </msub>
+                        <mo>=</mo>
+                        <msub>
+                            <mi>C</mi>
+                            <mrow>
+                                <mi>r</mi>
+                                <mi>r</mi>
+                            </mrow>
+                        </msub>
+                        <mo>&#xB7;</mo>
+                        <msub>
+                            <mi>F</mi>
+                            <mi>g</mi>
+                        </msub>
+                        <mo>&#xB7;</mo>
+                        <mi>cos</mi>
+                        <mfenced>
+                            <mi>&#x3B1;</mi>
+                        </mfenced>
+                    </math>
+                </equation>
+                <equation>
+                    <title>Gravity resistance</title>
+                    <math xmlns="http://www.w3.org/1998/Math/MathML">
+                        <msub>
+                            <mi>F</mi>
+                            <mrow>
+                                <mi>r</mi>
+                                <mi>g</mi>
+                            </mrow>
+                        </msub>
+                        <mo>=</mo>
+                        <msub>
+                            <mi>F</mi>
+                            <mi>g</mi>
+                        </msub>
+                        <mo>&#xB7;</mo>
+                        <mi>sin</mi>
+                        <mfenced>
+                            <mi>&#x3B1;</mi>
+                        </mfenced>
+                    </math>
+                </equation>
+                <equation>
+                    <title>Gravitational force</title>
+                    <math xmlns="http://www.w3.org/1998/Math/MathML">
+                        <msub>
+                            <mi>F</mi>
+                            <mi>g</mi>
+                        </msub>
+                        <mo>=</mo>
+                        <mi>m</mi>
+                        <mo>&#xB7;</mo>
+                        <mi>g</mi>
+                    </math>
+                </equation>
+                <para>by replacing the terms, you get:</para>
+                <equation>
+                    <title>Total resistance</title>
+                    <math xmlns="http://www.w3.org/1998/Math/MathML">
+                        <msub>
+                            <mi>F</mi>
+                            <mrow>
+                                <mi>r</mi>
+                                <mi>t</mi>
+                                <mi>o</mi>
+                                <mi>t</mi>
+                            </mrow>
+                        </msub>
+                        <mo>=</mo>
+                        <msub>
+                            <mi>C</mi>
+                            <mrow>
+                                <mi>r</mi>
+                                <mi>r</mi>
+                            </mrow>
+                        </msub>
+                        <mo>&#xB7;</mo>
+                        <msub>
+                            <mi>F</mi>
+                            <mi>g</mi>
+                        </msub>
+                        <mo>&#xB7;</mo>
+                        <mi>cos</mi>
+                        <mfenced>
+                            <mi>&#x3B1;</mi>
+                        </mfenced>
+                        <mo>+</mo>
+                        <msub>
+                            <mi>F</mi>
+                            <mi>g</mi>
+                        </msub>
+                        <mi>sin</mi>
+                        <mfenced>
+                            <mi>&#x3B1;</mi>
+                        </mfenced>
+                        <mo>=</mo>
+                        <msub>
+                            <mi>F</mi>
+                            <mi>g</mi>
+                        </msub>
+                        <mfenced>
+                            <mrow>
+                                <msub>
+                                    <mi>C</mi>
+                                    <mrow>
+                                        <mi>r</mi>
+                                        <mi>r</mi>
+                                    </mrow>
+                                </msub>
+                                <mo>&#xB7;</mo>
+                                <mi>cos</mi>
+                                <mfenced>
+                                    <mi>&#x3B1;</mi>
+                                </mfenced>
+                                <mo>+</mo>
+                                <mi>sin</mi>
+                                <mfenced>
+                                    <mi>&#x3B1;</mi>
+                                </mfenced>
+                            </mrow>
+                        </mfenced>
+                        <mo>=</mo>
+                        <mi>m</mi>
+                        <mo>&#xB7;</mo>
+                        <mi>g</mi>
+                        <mo>.</mo>
+                        <mfenced>
+                            <mrow>
+                                <msub>
+                                    <mi>C</mi>
+                                    <mrow>
+                                        <mi>r</mi>
+                                        <mi>r</mi>
+                                    </mrow>
+                                </msub>
+                                <mo>&#xB7;</mo>
+                                <mi>cos</mi>
+                                <mfenced>
+                                    <mi>&#x3B1;</mi>
+                                </mfenced>
+                                <mo>+</mo>
+                                <mi>s</mi>
+                                <mi>i</mi>
+                                <mi>n</mi>
+                                <mfenced>
+                                    <mi>&#x3B1;</mi>
+                                </mfenced>
+                            </mrow>
+                        </mfenced>
+                    </math>
+                </equation>
+                <para>From the general specifications, the total resistance force in the grass is
+                    easily calculated for a maximum slope of 45°.</para>
+                <equation>
+                    <title>Maximum resistance</title>
+                    <math xmlns="http://www.w3.org/1998/Math/MathML">
+                        <msub>
+                            <mi>F</mi>
+                            <mrow>
+                                <mi>r</mi>
+                                <mi>t</mi>
+                                <mi>o</mi>
+                                <mi>t</mi>
+                            </mrow>
+                        </msub>
+                        <mo>=</mo>
+                        <mn>20</mn>
+                        <mo>&#xB7;</mo>
+                        <mn>9</mn>
+                        <mo>,</mo>
+                        <mn>91</mn>
+                        <mo>&#xB7;</mo>
+                        <mfenced>
+                            <mrow>
+                                <mn>0</mn>
+                                <mo>,</mo>
+                                <mn>3</mn>
+                                <mo>&#xB7;</mo>
+                                <mn>0</mn>
+                                <mo>,</mo>
+                                <mn>7</mn>
+                                <mo>+</mo>
+                                <mn>0</mn>
+                                <mo>,</mo>
+                                <mn>7</mn>
+                            </mrow>
+                        </mfenced>
+                        <mo>=</mo>
+                        <mn>177</mn>
+                        <mo>,</mo>
+                        <mn>5</mn>
+                        <mi>N</mi>
+                        <mo>&#x2245;</mo>
+                        <mn>180</mn>
+                        <mi>N</mi>
+                    </math>
+                </equation>
+                <para>
+                    <note>
+                        <para>The values calculated above correspond to the maximum forces with
+                            which the robot could be confronted.</para>
+                    </note>
+                </para>
+            </section>
+        </section>
+        <section>
+            <title>Wheel diameter<indexterm>
+                    <primary>Wheel diameter</primary>
+                </indexterm></title>
+            <para>The diameter of the wheels is determined by the ground clearance of the robot
+                mower chassis. Wheels with a diameter of 30cm are chosen: this ensures the minimum
+                ground clearance required in the general specifications and leaves some room for the
+                layout of the electric propulsion motors. In addition, wheels with a diameter of
+                30cm allow the use of inflated tires (at low pressure) which makes it easier to
+                travel on slightly uneven ground such as in crops.</para>
+            <para>The relationship between the rotational speed and the wheel radius is given
+                by:</para>
+            <equation>
+                <title>Speed as a function of rotation speed</title>
+                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <mi>V</mi>
+                    <mo>=</mo>
+                    <mn>2</mn>
+                    <mo>&#xB7;</mo>
+                    <mi mathvariant="normal">&#x3C0;</mi>
+                    <mo>&#xB7;</mo>
+                    <mi mathvariant="normal">r</mi>
+                    <mo>.</mo>
+                    <mi mathvariant="normal">&#x3C9;</mi>
+                </math>
+            </equation>
+            <para>where:</para>
+            <para>V: speed in m/s</para>
+            <para>r: wheel radius in m</para>
+            <para>ω: rotational speed in rad/s</para>
+            <para>The rotational speed can be calculated from the linear speed as follows:</para>
+            <equation>
+                <title>Rotational speed as a function of speed</title>
+                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <mi>&#x3C9;</mi>
+                    <mo>=</mo>
+                    <mfrac>
+                        <mi>V</mi>
+                        <mi>r</mi>
+                    </mfrac>
+                </math>
+            </equation>
+            <para>or, in our case:</para>
+            <para><inlineequation>
+                    <math xmlns="http://www.w3.org/1998/Math/MathML">
+                        <mi>&#x3C9;</mi>
+                        <mo>=</mo>
+                        <mfrac>
+                            <mrow>
+                                <mn>0</mn>
+                                <mo>,</mo>
+                                <mn>5</mn>
+                            </mrow>
+                            <mrow>
+                                <mn>0</mn>
+                                <mo>,</mo>
+                                <mn>1</mn>
+                                <mn>5</mn>
+                            </mrow>
+                        </mfrac>
+                        <mo>=</mo>
+                        <mn>3</mn>
+                        <mo>,</mo>
+                        <mn>33</mn>
+                        <mfrac bevelled="true">
+                            <mrow>
+                                <mi>r</mi>
+                                <mi>d</mi>
+                            </mrow>
+                            <mi>s</mi>
+                        </mfrac>
+                        <mo>=</mo>
+                        <mn>1</mn>
+                        <mo>,</mo>
+                        <mn>05</mn>
+                        <mfrac bevelled="true">
+                            <mi>t</mi>
+                            <mi>s</mi>
+                        </mfrac>
+                        <mo>=</mo>
+                        <mn>63</mn>
+                        <mfrac bevelled="true">
+                            <mi>t</mi>
+                            <mrow>
+                                <mi>m</mi>
+                                <mi>i</mi>
+                                <mi>n</mi>
+                            </mrow>
+                        </mfrac>
+                    </math>
+                </inlineequation></para>
+            <para/>
+        </section>
+        <section xml:id="couple">
+            <title>Propulsion torque<indexterm>
+                    <primary>Propulsion</primary>
+                    <secondary>Torque</secondary>
+                </indexterm></title>
+            <para>The torque required depends directly on the diameter of the wheels and the maximum
+                resistance force. Power, on the other hand, depends on the torque and rotational
+                speed of the wheels, or on the forward speed and resistance force.</para>
+            <para>The total force required for the movement is 180N. However, it is evenly
+                distributed over all 4-wheel drive. It is therefore 45N per wheel</para>
+            <equation>
+                <title>Maximum torque per motor</title>
+                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <mi>T</mi>
+                    <mo>=</mo>
+                    <msub>
+                        <mi>F</mi>
+                        <mrow>
+                            <mi>r</mi>
+                            <mi>r</mi>
+                        </mrow>
+                    </msub>
+                    <mo>&#xB7;</mo>
+                    <mi>r</mi>
+                    <mo>=</mo>
+                    <mn>45</mn>
+                    <mo>&#xB7;</mo>
+                    <mn>0</mn>
+                    <mo>,</mo>
+                    <mn>15</mn>
+                    <mo>=</mo>
+                    <mn>6</mn>
+                    <mo>,</mo>
+                    <mn>75</mn>
+                    <mi>N</mi>
+                    <mi>m</mi>
+                </math>
+            </equation>
+            <para>This represents the total torque. For 4 motors, the torque per motor is a maximum
+                of <emphasis role="bold">6.75Nm</emphasis>.</para>
+        </section>
+        <section xml:id="puissance">
+            <title>Propulsion power<indexterm>
+                    <primary>Propulsion</primary>
+                    <secondary>Power</secondary>
+                </indexterm></title>
+            <para>The power required to propel the mower, according to the basic specifications,
+                is:</para>
+            <equation>
+                <title>Required power</title>
+                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <mi>P</mi>
+                    <mo>=</mo>
+                    <msub>
+                        <mi>F</mi>
+                        <mrow>
+                            <mi>r</mi>
+                            <mi>t</mi>
+                            <mi>o</mi>
+                            <mi>t</mi>
+                        </mrow>
+                    </msub>
+                    <mo>&#xB7;</mo>
+                    <mi>V</mi>
+                    <mo>=</mo>
+                    <mn>180</mn>
+                    <mo>&#xB7;</mo>
+                    <mn>0</mn>
+                    <mo>.</mo>
+                    <mn>5</mn>
+                    <mo>=</mo>
+                    <mn>90</mn>
+                    <mi>W</mi>
+                </math>
+            </equation>
+            <para>With 4 propulsion engines, each engine must have a power of <emphasis role="bold"
+                    >22.5W≅25W</emphasis> per engine.<footnote>
+                    <para>with the assumption that the motors and their controls have an efficiency
+                        close to 100%.</para>
+                </footnote></para>
+            <para>
+                <table frame="all">
+                    <title>Characteristics of propulsion engines</title>
+                    <tgroup cols="3">
+                        <colspec colname="c1" colnum="1" colwidth="1*"/>
+                        <colspec colname="c2" colnum="2" colwidth="1*"/>
+                        <colspec colname="c3" colnum="3" colwidth="1*"/>
+                        <thead>
+                            <row>
+                                <entry/>
+                                <entry>Value</entry>
+                                <entry>Comment</entry>
+                            </row>
+                        </thead>
+                        <tbody>
+                            <row>
+                                <entry>Power</entry>
+                                <entry>25W</entry>
+                                <entry/>
+                            </row>
+                            <row>
+                                <entry>Torque</entry>
+                                <entry>6,75Nm</entry>
+                                <entry/>
+                            </row>
+                            <row>
+                                <entry>Rotational speed</entry>
+                                <entry>60t/min</entry>
+                                <entry>avec réducteur</entry>
+                            </row>
+                            <row>
+                                <entry>Power supply</entry>
+                                <entry>12 ou 24 V</entry>
+                                <entry/>
+                            </row>
+                        </tbody>
+                    </tgroup>
+                </table>
+            </para>
+        </section>
+        <section>
+            <title>Power for accessories<indexterm>
+                    <primary>Accessories</primary>
+                    <secondary>Power</secondary>
+                </indexterm></title>
+            <para>We reserve 180W of power for connecting accessories, such as cutter bar, arm, etc.
+                to the robot.</para>
+        </section>
+        <section>
+            <title>Battery pack<indexterm>
+                    <primary>Battery pack</primary>
+                </indexterm></title>
+            <para>To estimate the battery capacity, we start from the robot's autonomy, 4 hours, and
+                the total electrical power required, namely the power of the accessories and the
+                propulsion power.</para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Autonomy: 4h</para>
+                    </listitem>
+                    <listitem>
+                        <para>Total power: <inlineequation>
+                                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                                    <mn>90</mn>
+                                    <mi>W</mi>
+                                    <mo>+</mo>
+                                    <mn>180</mn>
+                                    <mi>W</mi>
+                                    <mo>=</mo>
+                                    <mn>270</mn>
+                                    <mi>W</mi>
+                                </math>
+                            </inlineequation></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>12V or 24V batteries are possible. The necessary capacities  are:<indexterm>
+                    <primary>Battery capacity</primary>
+                </indexterm></para>
+            <para>
+                <table frame="all">
+                    <title>Battery capacity<indexterm>
+                            <primary>Battery&lt;</primary>
+                            <secondary>Capacity</secondary>
+                        </indexterm></title>
+                    <tgroup cols="4">
+                        <colspec colname="c1" colnum="1" colwidth="1*"/>
+                        <colspec colname="c2" colnum="2" colwidth="1*"/>
+                        <colspec colname="c3" colnum="3" colwidth="1*"/>
+                        <colspec colname="c4" colnum="4" colwidth="1*"/>
+                        <thead>
+                            <row>
+                                <entry>Nominal voltage</entry>
+                                <entry>Power</entry>
+                                <entry>Current</entry>
+                                <entry>Capacity</entry>
+                            </row>
+                        </thead>
+                        <tbody>
+                            <row>
+                                <entry>12V</entry>
+                                <entry>270W</entry>
+                                <entry>22.5A</entry>
+                                <entry>90Ah</entry>
+                            </row>
+                            <row>
+                                <entry>24V</entry>
+                                <entry>270W</entry>
+                                <entry>11.25A</entry>
+                                <entry>45Ah</entry>
+                            </row>
+                        </tbody>
+                    </tgroup>
+                </table>
+            </para>
+            <para>
+                <warning>
+                    <para>In the above estimates, we did not take into account the efficiency of
+                        motors, electronic circuits, etc. However, we have calculated the necessary
+                        capacity using the maximum continuous power, which will not always be the
+                        case.</para>
+                </warning>
+            </para>
+            <para/>
+        </section>
+    </section>
+</chapter>

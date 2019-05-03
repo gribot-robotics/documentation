@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?xml-model href="http://docbook.org/xml/5.1/rng/docbookxi.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://docbook.org/xml/5.1/sch/docbook.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<book xmlns="http://docbook.org/ns/docbook" 
+    xmlns:xi="http://www.w3.org/2001/XInclude"
+    xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
+    <info>
+        <title>Robotic platform for agriculture</title>
+        <subtitle>System Specifications</subtitle>
+        <authorgroup>
+            <author>
+                <personname>
+                    <firstname>Guy</firstname>
+                    <surname>Corbaz</surname>
+                </personname>
+                <address><city>Le Mont-sur-Lausanne</city>
+                <street>ch. du Châtaignier 2</street>
+                <postcode>1052</postcode>
+                <country>Suisse</country>            </address>
+                <email>guy@corbaz.org</email>
+            </author>
+        </authorgroup>
+        <orgname>gribot</orgname>
+        <date>2019</date>
+    </info>
+    <dedication>
+        <para>To the planet</para>
+    </dedication>
+    <preface>
+        <title>Preface</title>
+        <para>We want to accelerate the transition to sustainable development, that's why we develop
+            an open source agriculture robotic platform. We distribute all the plans license and
+            software of our robot under Apache 2.0, except for ready-made items such as motors, GPS
+            modules, LIDAR , etc. which are under the manufacturer's license.</para>
+    </preface>
+    <xi:include href="introduction/introduction.xml"/>
+    <xi:include href="specification/specification.xml"/>
+
+    <xi:include href="architecture/architecture.xml"/>
+    <xi:include href="prototype/prototype.xml"/>
+
+    <xi:include href="electronic/electronic.xml"/>
+    
+    <xi:include href="software/software.xml"/>
+    
+    <!--  <xi:include href="rappel_physique/rappel_physique.xml"/>-->
+
+    
+    <xi:include href="glossary/glossary.xml"/>
+    <xi:include href="bibliography/bibliography.xml"/>
+    <xi:include href="index.xml"/>
+</book>

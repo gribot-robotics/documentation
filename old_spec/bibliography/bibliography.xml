@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://docbook.org/xml/5.1/rng/docbook.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://docbook.org/xml/5.1/sch/docbook.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<chapter xmlns="http://docbook.org/ns/docbook"
+    xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
+     <title>Bibliography</title>
+     <para/>
+    <bibliography>
+        <title>Bibliography</title>
+        
+        <biblioentry xreflabel="wiki01">
+            <title>Rolling resistance</title>
+            <publisher>
+                <publishername>Wikipedia</publishername>
+            </publisher>
+        </biblioentry>
+        
+        <biblioentry xreflabel="ROS01">
+            <title>Robot Operating System</title>
+            <publisher>
+                <publishername>ROS</publishername>
+            </publisher>
+        </biblioentry>
+        
+        <biblioentry xreflabel="Joseph2017">
+            <title>ROS Robotics Projects</title>
+            <subtitle>Build a variety of awesome robots that can see, sense, move, and do a lot more using the powerful Robot Operating System</subtitle>
+            <publisher>
+                <publishername>Packt Publishing Ltd.</publishername>
+            </publisher>
+            <author>
+                <personname>
+                    <firstname>Joseph</firstname>
+                    <surname>Lentin</surname>
+                </personname>
+            </author>
+            <biblioid class="isbn">978-1-78355-471-3</biblioid>
+            <copyright>
+                <year>2017</year>
+
+            </copyright>
+        </biblioentry>
+        
+        <biblioentry xreflabel="Carol2016">
+            <title>ROS Robotics By Example</title>
+            <subtitle>Bring life to your robot using ROS robotic application</subtitle>
+            <publisher>
+                <publishername>Packt Publishing Ltd.</publishername>
+            </publisher>
+
+            <authorgroup>
+                <author>
+                    <personname>
+                        <firstname>Carol</firstname>
+                        <surname>Fairchild</surname>
+                    </personname>
+                </author>
+                <author>
+                    <personname>
+                        <honorific>Dr.</honorific>
+                        <firstname>Thomas</firstname>
+                        <othername>L.</othername>
+                        <surname>Harman</surname>
+                    </personname>
+                </author>
+            </authorgroup>
+            <biblioid class="isbn">978-1-78217-519-3</biblioid>
+            <copyright>
+                <year>2016</year>
+                
+            </copyright>
+        </biblioentry>
+            <biblioentry xreflabel="ben2016">
+                <title>VESC – Open Source ESC</title>
+        </biblioentry>
+        
+    </bibliography>
+</chapter>

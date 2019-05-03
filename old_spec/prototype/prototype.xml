@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://docbook.org/xml/5.1/rng/docbook.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://docbook.org/xml/5.1/sch/docbook.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<chapter xmlns="http://docbook.org/ns/docbook"
+    xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
+     <title>Prototype<indexterm>
+            <primary>Prototype</primary>
+        </indexterm></title>
+     <para>This chapter concerns the realization of the prototype. It describes the assumptions to
+        be validated and the tests and measurements to be performed.</para>
+    <section>
+        <title>Assumptions to be validated<indexterm>
+                <primary>To be validated</primary>
+            </indexterm></title>
+        <para>The hypotheses to be validated are:</para>
+        <para>
+            <orderedlist>
+                <listitem>
+                    <para>Lidar</para>
+                    <para>
+                        <orderedlist>
+                            <listitem>
+                                <para>Possibility to use the lidar for navigation, based on known
+                                    ground references (trees, poles, walls, etc.) instread of
+                                    GPS.</para>
+                            </listitem>
+                            <listitem>
+                                <para>xxx</para>
+                            </listitem>
+                        </orderedlist>
+                    </para>
+                </listitem>
+                <listitem>
+                    <para>GPS</para>
+                    <para>
+                        <orderedlist>
+                            <listitem>
+                                <para>Check the accuracy of the RTK GPS.</para>
+                            </listitem>
+                            <listitem>
+                                <para>Explore the possibility of using the Swiss and foreign GNSS
+                                    network in the future, if the price is affordable.</para>
+                            </listitem>
+                            <listitem>
+                                <para>Validate the method of delimiting the land.</para>
+                            </listitem>
+                            <listitem>
+                                <para>xxx</para>
+                            </listitem>
+                        </orderedlist>
+                    </para>
+                </listitem>
+                <listitem>
+                    <para>Propulsion</para>
+                    <para>
+                        <orderedlist>
+                            <listitem>
+                                <para>xxx</para>
+                            </listitem>
+                        </orderedlist>
+                    </para>
+                </listitem>
+                <listitem>
+                    <para>Cutting</para>
+                    <para>
+                        <orderedlist>
+                            <listitem>
+                                <para>Validate the rotation speed of the knives</para>
+                            </listitem>
+                            <listitem>
+                                <para>Validate the possibility of varying the speed of rotation
+                                    according to the type of grass, in order to save energy.</para>
+                            </listitem>
+                            <listitem>
+                                <para>xxx</para>
+                            </listitem>
+                        </orderedlist>
+                    </para>
+                </listitem>
+                <listitem>
+                    <para>Remote access</para>
+                    <para>
+                        <orderedlist>
+                            <listitem>
+                                <para>xxx</para>
+                            </listitem>
+                        </orderedlist>
+                    </para>
+                </listitem>
+                <listitem>
+                    <para>Situation</para>
+                    <para>
+                        <orderedlist>
+                            <listitem>
+                                <para>xxx</para>
+                            </listitem>
+                        </orderedlist>
+                    </para>
+                </listitem>
+            </orderedlist>
+        </para>
+        <para></para>
+    </section>
+    <section>
+        <title>Tests and measurements to be carried out</title>
+        <para>The tests and measurements to be performed are:</para>
+        <para>
+            <orderedlist>
+                <listitem>
+                    <para>Lidar</para>
+                    <para>
+                        <orderedlist>
+                            <listitem>
+                                <para>Measure the accuracy of the LIDAR</para>
+                            </listitem>
+                            <listitem>
+                                <para>xxx</para>
+                            </listitem>
+                            <listitem>
+                                <para>xxx</para>
+                            </listitem>
+                            <listitem>
+                                <para>xxx</para>
+                            </listitem>
+                            <listitem>
+                                <para>xxx</para>
+                            </listitem>
+                        </orderedlist>
+                    </para>
+                </listitem>
+                <listitem>
+                    <para>GPS</para>
+                    <para>
+                        <orderedlist>
+                            <listitem>
+                                <para>Measure GPS accuracy</para>
+                            </listitem>
+                            <listitem>
+                                <para>xxx</para>
+                            </listitem>
+                        </orderedlist>
+                    </para>
+                </listitem>
+                <listitem>
+                    <para>Propulsion</para>
+                    <para>
+                        <orderedlist>
+                            <listitem>
+                                <para>Measure the power curve according to the use</para>
+                            </listitem>
+                            <listitem>
+                                <para>xxx</para>
+                            </listitem>
+                        </orderedlist>
+                    </para>
+                </listitem>
+                <listitem>
+                    <para>Cutting</para>
+                    <para>
+                        <orderedlist>
+                            <listitem>
+                                <para>Measure the power consumed by the motors during use</para>
+                            </listitem>
+                            <listitem>
+                                <para>Test the cutting quality at different speeds.</para>
+                            </listitem>
+                            <listitem>
+                                <para>xxx</para>
+                            </listitem>
+                        </orderedlist>
+                    </para>
+                </listitem>
+                <listitem>
+                    <para>Remote access</para>
+                    <para>
+                        <orderedlist>
+                            <listitem>
+                                <para>xxx</para>
+                            </listitem>
+                        </orderedlist>
+                    </para>
+                </listitem>
+                <listitem>
+                    <para>Situation</para>
+                    <para>
+                        <orderedlist>
+                            <listitem>
+                                <para>Testing accelerometers</para>
+                            </listitem>
+                            <listitem>
+                                <para>Test magnetometers, mainly their interactions with
+                                    motors.</para>
+                            </listitem>
+                            <listitem>
+                                <para>Testing gyroscopes</para>
+                            </listitem>
+                            <listitem>
+                                <para>xxx</para>
+                            </listitem>
+                        </orderedlist>
+                    </para>
+                </listitem>
+            </orderedlist>
+        </para>
+        <para/>
+    </section>
+</chapter>
