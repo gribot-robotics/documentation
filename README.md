@@ -1,5 +1,19 @@
-# specifications
-Gribot specifications are written in docbooki, with Oxygen XML Editor. A pdf version is available in folder specifications/out/pdf/main.pdf
+# Project ond documentation rganization
+
+The project and documentation are organized into 6 main phase. A list of activities and deliverables are asociated to each phase.
+
+* Planning
+* Concept Development
+* System-Level Design
+* Detail Design
+* Testing and Refinement
+* Production Ramp-Up
+
+# Specifications
+
+Gribot specifications are written in docbook, with Oxygen XML Editor.
+
+Specification are beinbg reorganized. The old specification are located in folder old_spec/out/pdf/main.pdf, while the new will be split according to the project steps in different folder.
 
 # Free editing tools
 
