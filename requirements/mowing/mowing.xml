@@ -5,6 +5,125 @@
     xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
      <title>Mowing</title>
      <para>As mentioned above, the mower robot will be the first element of the
-            <emphasis>gribot</emphasis> robotic platform. </para>
+            <emphasis>gribot</emphasis> robotic platform. There are several reasons for this choice:
+        grass care in crops is unproductive, time-consuming and uses a lot of non-renewable energy
+        unnecessarily. We estimated that maintaining the grass in one hectare of fruit trees
+        consumed about 100 litres of fuel oil per year and required almost a week's work.</para>
+    <para>We also noticed that such a robot would be useful in many other places outside
+        agriculture, such as roadside maintenance, grass mowing in industrial plots, community plot
+        maintenance, in short, any grassy surface, not always very flat, requiring regular
+        mowing.</para>
+    <para>The requirement for the mower robot are listed below.</para>
+    <para>
+        <itemizedlist>
+            <listitem>
+                <para>The robot should not exceed 60cm in width, in order to easily slip between
+                    fruit trees or vines.</para>
+            </listitem>
+            <listitem>
+                <para>The height of the robot should not exceed 30 to 40 cm in order to be able to
+                    slip under fruit trees or vines.</para>
+            </listitem>
+            <listitem>
+                <para>The robot should be able to maintain 20,000 m<superscript>2</superscript>
+                    (2Ha).</para>
+            </listitem>
+            <listitem>
+                <para>The robot's working surface must under no circumstances be made by burying a
+                    wire, as is done for lawn care robots. An electronic means, such as GPS or other
+                    positioning system, will always be preferable.</para>
+            </listitem>
+            <listitem>
+                <para>The robot must be able to move easily on irregular surfaces that may have
+                    holes about ten centimetres deep.</para>
+            </listitem>
+            <listitem>
+                <para>The robot must be able to overcome obstacles of at least 10 cm in
+                    height.</para>
+            </listitem>
+            <listitem>
+                <para>The robot should have an autonomy of at least 4 hours.</para>
+            </listitem>
+            <listitem>
+                <para>The robot must be able to detect obstacles and calculate its trajectory in
+                    order to avoid them.</para>
+            </listitem>
+            <listitem>
+                <para>The robot must implement a strategy to optimize its work in order to save its
+                    battery. A completely random trajectory is strongly discouraged.</para>
+            </listitem>
+            <listitem>
+                <para>The robot must be able to climb slopes of 45°.</para>
+            </listitem>
+            <listitem>
+                <para>Users and animals must not be allowed to come into contact with moving parts
+                    of the robot. For example, it is possible to detect a presence in the robot
+                    environment and to stop any moving parts.</para>
+            </listitem>
+            <listitem>
+                <para>The robot must stop when someone approaches too close.</para>
+            </listitem>
+            <listitem>
+                <para>Cutting elements (e.g. mower knives) must stop if the machine tilts too
+                    much.</para>
+            </listitem>
+            <listitem>
+                <para>The machine must stop completely and go into alarm if it overturns.</para>
+            </listitem>
+            <listitem>
+                <para>The machine must stop completely and go into alarm if it is blocked.</para>
+            </listitem>
+            <listitem>
+                <para>The robot must be able to be controlled remotely, for example by means of a
+                    mobile terminal (smart phone).</para>
+            </listitem>
+            <listitem>
+                <para>The robot must be protected against unauthorized remote access.</para>
+            </listitem>
+            <listitem>
+                <para>Robot ownership must be tracked: if the owner sell his robot to someone else,
+                    a mechanism has to be put in place to track this transaction. All access right
+                    and ownership parameters have to be transmitted to the new owner.</para>
+            </listitem>
+            <listitem>
+                <para>The robot must be able to be remotely activated or deactivated.</para>
+            </listitem>
+            <listitem>
+                <para>The robot alarms must be transmitted to the mobile control terminal.</para>
+            </listitem>
+            <listitem>
+                <para>The work surface and the zones to be avoided must be easily and if possible
+                    remotely configured, for example by drawing on a map.</para>
+            </listitem>
+            <listitem>
+                <para>The robot must have a charging station.</para>
+            </listitem>
+            <listitem>
+                <para>The robot must be able to return to its charging station by itself when its
+                    battery is discharged. The order of return to the charging station must take
+                    into account the battery capacity and the energy required for the return
+                    journey.</para>
+            </listitem>
+            <listitem>
+                <para>When the robot is connected to its charging station, it stops all unnecessary
+                    electrical consumers.</para>
+            </listitem>
+            <listitem>
+                <para>When the robot's battery is recharged, it must be able to automatically return
+                    or it has abandoned its work.</para>
+            </listitem>
+            <listitem>
+                <para>The robot must have an autonomous charging station, powered by solar panels or
+                    a wind turbine, for example.</para>
+            </listitem>
+            <listitem>
+                <para>The charging time of the robot battery should not exceed 4 hours when the
+                    charging station is connected to the power grid. However, a longer charging
+                    time, for example 6 hours, may be allowed on a stand-alone charging
+                    station.</para>
+            </listitem>
+        </itemizedlist>
+    </para>
+    <para/>
 </chapter>
 
