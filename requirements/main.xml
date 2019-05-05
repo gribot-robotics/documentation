@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://docbook.org/xml/5.1/rng/docbookxi.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://docbook.org/xml/5.1/sch/docbook.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<book xmlns="http://docbook.org/ns/docbook" 
+        xmlns:xi="http://www.w3.org/2001/XInclude"
+        xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
+    <info>
+        <title>gribot</title>
+        <subtitle>Requirement for an open source agricultural robotics platform</subtitle>
+        <author>
+            <orgname>gribot</orgname>
+            
+            <address>
+                <street>ch. du Châtaignier 2</street>
+                <postcode>1052</postcode>
+                <city>Le Mont-sur-Lausanne</city>
+                <country>Switzerland</country>
+            </address>
+            <email>info@gribot.org</email>
+        </author>
+    </info>
+    <xi:include href="introduction/introduction.xml"/>
+    <xi:include href="requirement/requirement.xml"/>
+    <xi:include href="mowing/mowing.xml"/>
+</book>
