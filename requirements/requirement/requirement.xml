@@ -4,12 +4,12 @@
 <chapter xmlns="http://docbook.org/ns/docbook"
     xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
      <title>Requirement</title>
-    <para>As mentionned in the introduction, we would like to build a robotic platform, but what is
-        a robotic platforme ?</para>
+    <para>As mentioned in the introduction, we would like to build a robotic platform, but what is a
+        robotic platform ?</para>
     <para>For us, a platform represents a set of flexible robots, based on a common base, such as a
-        common software, common electronics, standard tool holders, standards parts, etc. The gribot
-        platform could, for example, allow the creation of a small mower robot, as well as a high
-        clearance robot to work on mounds of crops.</para>
+        common software, common electronics, standard tool holders, standards parts, etc. The
+            <emphasis>gribot</emphasis> platform could, for example, allow the creation of a small
+        mower robot, as well as a high clearance robot to work on mounds of crops.</para>
     <para>This means that, in the long term, there will not be just one robot, but a family that, we
         hope, will allow great flexibility in working in agriculture.</para>
     <para>In a first step, we will focus on a mower robot, allowing the maintenance of the grass in

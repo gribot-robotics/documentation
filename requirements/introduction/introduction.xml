@@ -10,18 +10,19 @@
         example, the majority of farmers continue to use chemicals to control pests and weeds, and
         many of them continue to work huge areas of crops. These chemicals are not only expensive,
         but also toxic to our environment and our health.</para>
-    <para>Large areas of monoculture favour the development of diseases and the proliferation of
+    <para>Large areas of monoculture favor the development of diseases and the proliferation of
         insect pests, while reducing their predators. This way of working seriously damages
         biodiversity, the environment and the climate.</para>
     <para>If we want to continue to live on our planet, preserve our environment and our health, we
         must quickly change the way we do things. However, changing our habits does not necessarily
         mean returning to the Middle Ages. We can use technology intelligently to help us in our
         change and ease our life.</para>
-    <para>That's why we decided to design an open source robotics platform, called <emphasis>gribot</emphasis>, that
-        everyone should be able to build with a minimum of help. To this end, we publish all
-        schemas, models and software completely free of charge under GNU General Public License. We
-        believe that the free publication of our work will accelerate the diffusion of the robotic
-        gribot platform and thus reduce the impact on the environment.</para>
+    <para>That's why we decided to design an open source robotics platform, called
+            <emphasis>gribot</emphasis>, that everyone should be able to build with a minimum of
+        help. To this end, we publish all schema, models and software completely free of charge
+        under GNU General Public License. We believe that the free publication of our work will
+        accelerate the diffusion of the robotic gribot platform and thus reduce the impact on the
+        environment.</para>
     <para>We are firmly convinced that the future of agriculture depends on a reduction in the size
         of farms, cultivated plots, an increase in the diversity of cultivated plants, a decrease in
         the number of head of livestock, a serious reduction in the consumption of non-renewable
@@ -42,7 +43,7 @@
         <para>Perhaps you've wondered what <emphasis>gribot</emphasis> means. It is not a fantastic
             animal from the imagination of J. K. Rowling and encountering Harry Potter.</para>
         <para>We were looking for a short name and not yet used as a domain name. After some time of
-            braistorming, cutting and mixing the words agriculture and robot, we found a<emphasis
+            brainstorming, cutting and mixing the words agriculture and robot, we found a<emphasis
                 role="bold">gri</emphasis>culture ro<emphasis role="bold">bot</emphasis>, which
             gives gribot.</para>
     </section>
@@ -53,7 +54,7 @@
             members of this community are passionate volunteers.</para>
         <para>In the long run, we hope to be able to sell parts, kits and even complete robots to
             people who would not have the possibility to build everything themselves.</para>
-        <para>We will also consider collaborating with fablabs or collective workshops, in order to
+        <para>We will also consider collaborating with fab-labs or collective workshops, in order to
             allow everyone to acquire a <emphasis>gribot</emphasis> robot.</para>
     </section>
 </chapter>
