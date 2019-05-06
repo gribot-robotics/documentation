@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="21.0">
+    <meta>
+        <filters directoryPatterns="" filePatterns="\Qspecification.xpr\E" positiveFilePatterns="" showHiddenFiles="false"/>
+        <options/>
+    </meta>
+    <projectTree name="specification.xpr">
+        <folder path="."/>
+        <file name="introduction/introduction.xml"/>
+        <file name="main.xml"/>
+        <file name="mowing/mowing.xml"/>
+        <file name="specification/specification.xml"/>
+    </projectTree>
+</project>
