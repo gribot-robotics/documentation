@@ -17,12 +17,19 @@
         must quickly change the way we do things. However, changing our habits does not necessarily
         mean returning to the Middle Ages. We can use technology intelligently to help us in our
         change and ease our life.</para>
+    <para>
+        <mediaobject>
+            <imageobject>
+                <imagedata fileref="env.jpg" width="400" align="center"/>
+            </imageobject>
+        </mediaobject>
+    </para>
     <para>That's why we decided to design an open source robotics platform, called
             <emphasis>gribot</emphasis>, that everyone should be able to build with a minimum of
         help. To this end, we publish all schema, models and software completely free of charge
         under GNU General Public License. We believe that the free publication of our work will
-        accelerate the diffusion of the robotic gribot platform and thus reduce the impact on the
-        environment.</para>
+        accelerate the diffusion of the robotic <emphasis>gribot</emphasis> platform and thus reduce
+        the impact on the environment.</para>
     <para>We are firmly convinced that the future of agriculture depends on a reduction in the size
         of farms, cultivated plots, an increase in the diversity of cultivated plants, a decrease in
         the number of head of livestock, a serious reduction in the consumption of non-renewable
@@ -45,7 +52,7 @@
         <para>We were looking for a short name and not yet used as a domain name. After some time of
             brainstorming, cutting and mixing the words agriculture and robot, we found a<emphasis
                 role="bold">gri</emphasis>culture ro<emphasis role="bold">bot</emphasis>, which
-            gives gribot.</para>
+            gives <emphasis>gribot</emphasis>.</para>
     </section>
     <section>
         <title>Project organization</title>
@@ -58,4 +65,3 @@
             allow everyone to acquire a <emphasis>gribot</emphasis> robot.</para>
     </section>
 </chapter>
-
