@@ -13,9 +13,10 @@
         agriculture, such as roadside maintenance, grass mowing in industrial plots, community plot
         maintenance, in short, any grassy surface, not always very flat, requiring regular
         mowing.</para>
+
     <para>The requirement for the mower robot are listed below.</para>
     <para>
-        <itemizedlist>
+        <orderedlist>
             <listitem>
                 <para>The robot should not exceed 60cm in width, in order to easily slip between
                     fruit trees or vines.</para>
@@ -122,8 +123,7 @@
                     time, for example 6 hours, may be allowed on a stand-alone charging
                     station.</para>
             </listitem>
-        </itemizedlist>
+        </orderedlist>
     </para>
     <para/>
 </chapter>
-
