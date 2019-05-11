@@ -4,6 +4,11 @@
 <chapter xmlns="http://docbook.org/ns/docbook"
     xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
      <title>Requirement</title>
+    <para>The requirement document describes <emphasis>what</emphasis> the
+            <emphasis>gribot</emphasis> robotic platform should do and what goal it should reach,
+        but not <emphasis>how</emphasis> to do it. Requirement document are usually written by
+        people who have a need, but these persons don't necessarly know how to make thinks:
+        sometime, they also don't know if thinks a feasible.</para>
     <para>As mentioned in the introduction, we would like to build a robotic platform, but what is a
         robotic platform ?</para>
     <para>For us, a platform represents a set of flexible robots, based on a common base, such as a
