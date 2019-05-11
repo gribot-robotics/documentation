@@ -4,6 +4,52 @@
 <chapter xmlns="http://docbook.org/ns/docbook"
     xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
      <title>Introduction</title>
-     <para/>
+     <para>In the requirement document, we described <emphasis>what</emphasis> the gribot platform
+        should do and the goal to reach. The specification document describes how we will do it.
+        This document is much more technical as it contains many subjects such as:</para>
+    <para>
+        <itemizedlist>
+            <listitem>
+                <para>Analysis</para>
+            </listitem>
+            <listitem>
+                <para>Calculations and dimensioning</para>
+            </listitem>
+            <listitem>
+                <para>Technology choices</para>
+            </listitem>
+            <listitem>
+                <para>etc.</para>
+            </listitem>
+        </itemizedlist>
+    </para>
+    <para>during the preparation of the specification document, it is often necessary to revisit the
+        requirements definition document to clarify a point, and sometimes even to modify an unclear
+        specification, or to add one to clarify the situation.</para>
+    <para>In this document, specification will be split into two main categories:</para>
+    <para>
+        <variablelist>
+            <varlistentry>
+                <term>Platform specification</term>
+                <listitem>
+                    <para>These specification concerns the whole <emphasis>gribot</emphasis>
+                        platform, such as general architecture, software to use, technology to use,
+                        etc. In other word, all elements common to the <emphasis>gribot</emphasis>
+                        robot family. As an example, the navigation system concerns the whole
+                        platform.</para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
+                <term>Robot specification</term>
+                <listitem>
+                    <para>These specification concerns only one robot in the family, performing a
+                        specific function. It contains only those elements that are useful for this
+                        robot. As an example, the mower cutterbar does not concern the weeding
+                        robot.</para>
+                </listitem>
+            </varlistentry>
+        </variablelist>
+    </para>
+    <para/>
 </chapter>
 

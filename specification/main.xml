@@ -20,6 +20,6 @@
         </author>
     </info>
     <xi:include href="introduction/introduction.xml"/>
-    <xi:include href="specification/specification.xml"/>
-    <xi:include href="mowing/mowing.xml"/>
+    <xi:include href="platform_specification/platform_specification.xml"/>
+    <xi:include href="mower_specification/mower_specification.xml"/>
 </book>

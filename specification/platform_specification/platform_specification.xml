@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://docbook.org/xml/5.1/rng/docbook.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://docbook.org/xml/5.1/sch/docbook.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<chapter xmlns="http://docbook.org/ns/docbook"
+    xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
+     <title>Platform specification</title>
+     <para>The platform specification chapter contains element common to all robot that can be
+        derived from the <emphasis>gribot</emphasis> platform. It goes from the propulsion system to
+        navigation, including communication between the various elements.</para>
+    <para/>
+    <section>
+        <title>System architecture</title>
+        <para/>
+    </section>
+</chapter>
+
