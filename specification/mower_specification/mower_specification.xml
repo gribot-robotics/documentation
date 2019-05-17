@@ -4,6 +4,12 @@
 <chapter xmlns="http://docbook.org/ns/docbook"
     xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
      <title>Mower specification</title>
-     <para/>
+     <para>This chapter describes the specification related to the mower robot.</para>
+    <para/>
+    <section>
+        <title>Propulsion</title>
+        <para>The propulsion might depend on the size of the robot and its geometry. that's why
+            there's a propulsion paragraph in the mower chapter.</para>
+    </section>
 </chapter>
 

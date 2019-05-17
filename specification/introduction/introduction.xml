@@ -23,7 +23,7 @@
             </listitem>
         </itemizedlist>
     </para>
-    <para>during the preparation of the specification document, it is often necessary to revisit the
+    <para>During the preparation of the specification document, it is often necessary to revisit the
         requirements definition document to clarify a point, and sometimes even to modify an unclear
         specification, or to add one to clarify the situation.</para>
     <para>In this document, specification will be split into two main categories:</para>
@@ -50,6 +50,6 @@
             </varlistentry>
         </variablelist>
     </para>
-    <para/>
+    <para>The following chapters will describe these different specifications.</para>
 </chapter>
 
