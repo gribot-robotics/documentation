@@ -15,6 +15,9 @@
     </meta>
     <projectTree name="specification.xpr">
         <folder path="."/>
+        <file name="appendix/appendix.xml"/>
+        <file name="bibliography/bibliography.xml"/>
+        <file name="glossary/glossary.xml"/>
         <file name="introduction/introduction.xml"/>
         <file name="main.xml"/>
     </projectTree>

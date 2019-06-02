@@ -53,11 +53,15 @@
                 requirements above. At the time of writing, the available version is the Raspberry
                 Pi 3.</para>
             <para>
+                <figure>
+                    <title>Raspberry Pi</title>
                 <mediaobject>
+                    
                     <imageobject>
                         <imagedata fileref="raspberry_pi_3.jpg" width="400" align="center"/>
                     </imageobject>
-                </mediaobject></para>
+                </mediaobject>
+                </figure></para>
             <para>The Raspberry Pi 3 has enougth memory to run Ubuntu distribution together with
                 ROS. It also supports high-capacity SD cards, and has a whole collection of
                 interfaces and various cards.</para>
@@ -117,10 +121,25 @@
                     </listitem>
                 </itemizedlist>
             </para>
-            <para>Among the various buses available on the market, the CAN bus is one that meets the
-                above criteria. It comes from the automotive world and is widely distributed. The
-                use of the CANOpen protocol allows the connection of a large number of equipment
-                that support this standard.</para>
+            <para>Among the various buses available on the market, the CAN (Controller Area Network)
+                bus is one that meets the above criteria. It comes from the automotive world and is
+                widely distributed. The use of the CANOpen protocol allows the connection of a large
+                number of equipment that support this standard.</para>
+            <para>
+                <figure>
+                    <title>CanOPEN logo</title>
+                    <mediaobject>
+                    <imageobject>
+                        <imagedata fileref="Canopen_logo.png" width="300" align="center"/>
+                    </imageobject>
+                </mediaobject></figure>
+            </para>
+            <para>Development of the CAN bus started in 1983 at Robert Bosch GmbH. The protocol was
+                officially released in 1986 at the Society of Automotive Engineers (SAE) conference
+                in Detroit, Michigan. The CAN bus is not only limited to the automobile. Due to its
+                characteristics, it is widely used in many sectors such as industrial automation,
+                aviation, etc.</para>
+            <para/>
         </section>
     </section>
     <section>

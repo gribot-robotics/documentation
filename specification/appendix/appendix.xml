@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://docbook.org/xml/5.1/rng/docbook.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://docbook.org/xml/5.1/sch/docbook.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<appendix xmlns="http://docbook.org/ns/docbook"
+    xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
+     <title>Appendix</title>
+     <para/>
+    <section>
+        <title>Resistance to advancement</title>
+        <para/>
+        <section>
+            <title>Wheel resistance to driving</title>
+        <para>The forward speed resistance is one of the parameters required to calculate the
+            propulsion power of a wheeled vehicle. The two main parameters that influence the
+            resistance to advancement are:</para>
+        <para>
+            <itemizedlist>
+                <listitem>
+                    <para>The wheel forward resistance.</para>
+                </listitem>
+                <listitem>
+                    <para>The slope to be crossed.</para>
+                </listitem>
+            </itemizedlist>
+        </para>
+        <para>According to <citation>wiki01</citation>, rolling resistance calculations can be
+            simplified if the vehicle does not move fast, which is our case. Not having found the
+            rolling resistance coefficient for a tire on grass, we take the sand coefficient, 0.3,
+            which is probably higher than that of grass. However, since the robot will move on
+            uneven ground, which is not very similar to grass, this hypothesis leaves us a little
+            margin.</para>
+        <para>
+            <figure>
+                <title>Forces on a wheel</title>
+            <mediaobject>
+                <imageobject>
+                    <imagedata fileref="resistance_roulement.png" align="center"/>
+                </imageobject>
+            </mediaobject></figure>
+        </para>
+        <para>The rolling resistance is given by:</para>
+        <equation>
+            <title>Rolling resistance</title>
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+                <msub>
+                    <mi>F</mi>
+                    <mrow>
+                        <mi>r</mi>
+                        <mi>r</mi>
+                    </mrow>
+                </msub>
+                <mo>=</mo>
+                <msub>
+                    <mi>C</mi>
+                    <mrow>
+                        <mi>r</mi>
+                        <mi>r</mi>
+                    </mrow>
+                </msub>
+                <mo>&#xB7;</mo>
+                <msub>
+                    <mi>F</mi>
+                    <mi>g</mi>
+                </msub>
+            </math>
+        </equation>
+        <equation>
+            <title>Gravitational force</title>
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+                <msub>
+                    <mi>F</mi>
+                    <mi>g</mi>
+                </msub>
+                <mo>=</mo>
+                <mi>m</mi>
+                <mo>&#xB7;</mo>
+                <mi>g</mi>
+            </math>
+        </equation>
+        <para>where</para>
+        <para><inlineequation>
+                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <msub>
+                        <mi>F</mi>
+                        <mrow>
+                            <mi>r</mi>
+                            <mi>r</mi>
+                        </mrow>
+                    </msub>
+                </math>
+            </inlineequation>: rolling resistance force in N.</para>
+        <para><inlineequation>
+                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <msub>
+                        <mi>C</mi>
+                        <mrow>
+                            <mi>r</mi>
+                            <mi>r</mi>
+                        </mrow>
+                    </msub>
+                </math>
+            </inlineequation>: rolling resistance coefficient.</para>
+        <para><inlineequation>
+                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <mi>m</mi>
+                </math>
+            </inlineequation>: .mass of the vehicle (the robot for us) in Kg.</para>
+        <para><inlineequation>
+                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <mi>g</mi>
+                </math>
+            </inlineequation>: gravitational constant, in <inlineequation>
+                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <mfrac bevelled="true">
+                        <mi>m</mi>
+                        <msup>
+                            <mi>s</mi>
+                            <mn>2</mn>
+                        </msup>
+                    </mfrac>
+                </math>
+            </inlineequation>.</para>
+        <para/>
+    </section>
+        <section>
+            <title>Total resistance</title>
+            <para>Taking into account the slope, the calculation is a little more complex: it is
+                necessary to add the components due to gravitation. In addition, the rolling
+                resistance force decreases with increasing slope.</para>
+            <para>
+                <figure>
+                    <title>Total resistance</title>
+                <mediaobject>
+                    <imageobject>
+                        <imagedata fileref="resistance_totale.png" align="center"/>
+                    </imageobject>
+                
+                </mediaobject></figure></para>
+            <para>The total resistance is due to the force of gravity and rolling resistance, which
+                is:</para>
+            <para><inlineequation>
+                    <math xmlns="http://www.w3.org/1998/Math/MathML">
+                        <msub>
+                            <mi>F</mi>
+                            <mrow>
+                                <mi>r</mi>
+                                <mi>t</mi>
+                                <mi>o</mi>
+                                <mi>t</mi>
+                            </mrow>
+                        </msub>
+                        <mo>=</mo>
+                        <msub>
+                            <mi>F</mi>
+                            <mrow>
+                                <mi>r</mi>
+                                <mi>r</mi>
+                            </mrow>
+                        </msub>
+                        <mo>+</mo>
+                        <msub>
+                            <mi>F</mi>
+                            <mrow>
+                                <mi>r</mi>
+                                <mi>g</mi>
+                            </mrow>
+                        </msub>
+                    </math>
+                </inlineequation></para>
+            <para>where</para>
+            <para><inlineequation>
+                    <math xmlns="http://www.w3.org/1998/Math/MathML">
+                        <msub>
+                            <mi>F</mi>
+                            <mrow>
+                                <mi>r</mi>
+                                <mi>r</mi>
+                            </mrow>
+                        </msub>
+                    </math>
+                </inlineequation> is the rolling resistance force.</para>
+            <para><inlineequation>
+                    <math xmlns="http://www.w3.org/1998/Math/MathML">
+                        <msub>
+                            <mi>F</mi>
+                            <mrow>
+                                <mi>r</mi>
+                                <mi>g</mi>
+                            </mrow>
+                        </msub>
+                    </math>
+                </inlineequation> is the resistance force due to gravitation.</para>
+            <para><inlineequation>
+                    <math xmlns="http://www.w3.org/1998/Math/MathML">
+                        <msub>
+                            <mi>F</mi>
+                            <mrow>
+                                <mi>r</mi>
+                                <mi>o</mi>
+                                <mi>t</mi>
+                            </mrow>
+                        </msub>
+                    </math>
+                </inlineequation> is the total resistance force: the one that the motors must
+                overcome.</para>
+            <para>From the diagram and the triangle of forces, we
+                calculate:</para>
+            <equation xml:id="rolling_resistance">
+                <title>Rolling resistance</title>
+                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <msub>
+                        <mi>F</mi>
+                        <mrow>
+                            <mi>r</mi>
+                            <mi>r</mi>
+                        </mrow>
+                    </msub>
+                    <mo>=</mo>
+                    <msub>
+                        <mi>C</mi>
+                        <mrow>
+                            <mi>r</mi>
+                            <mi>r</mi>
+                        </mrow>
+                    </msub>
+                    <mo>&#xB7;</mo>
+                    <msub>
+                        <mi>F</mi>
+                        <mi>p</mi>
+                    </msub>
+                    <mo>=</mo>
+                    <msub>
+                        <mi>C</mi>
+                        <mrow>
+                            <mi>r</mi>
+                            <mi>r</mi>
+                        </mrow>
+                    </msub>
+                    <mo>&#xB7;</mo>
+                    <msub>
+                        <mi>F</mi>
+                        <mi>g</mi>
+                    </msub>
+                    <mo>&#xB7;</mo>
+                    <mi>cos</mi>
+                    <mfenced>
+                        <mi>&#x3B1;</mi>
+                    </mfenced>
+                </math>
+            </equation>
+            <equation>
+                <title>Gravity resistance</title>
+                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <msub>
+                        <mi>F</mi>
+                        <mrow>
+                            <mi>r</mi>
+                            <mi>g</mi>
+                        </mrow>
+                    </msub>
+                    <mo>=</mo>
+                    <msub>
+                        <mi>F</mi>
+                        <mi>g</mi>
+                    </msub>
+                    <mo>&#xB7;</mo>
+                    <mi>sin</mi>
+                    <mfenced>
+                        <mi>&#x3B1;</mi>
+                    </mfenced>
+                </math>
+            </equation>
+            <equation>
+                <title>Gravitational force</title>
+                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <msub>
+                        <mi>F</mi>
+                        <mi>g</mi>
+                    </msub>
+                    <mo>=</mo>
+                    <mi>m</mi>
+                    <mo>&#xB7;</mo>
+                    <mi>g</mi>
+                </math>
+            </equation>
+            <para>by replacing the terms, you get:</para>
+            <equation xml:id="total_resistance">
+                <title>Total resistance</title>
+                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <msub>
+                        <mi>F</mi>
+                        <mrow>
+                            <mi>r</mi>
+                            <mi>t</mi>
+                            <mi>o</mi>
+                            <mi>t</mi>
+                        </mrow>
+                    </msub>
+                    <mo>=</mo>
+                    <msub>
+                        <mi>C</mi>
+                        <mrow>
+                            <mi>r</mi>
+                            <mi>r</mi>
+                        </mrow>
+                    </msub>
+                    <mo>&#xB7;</mo>
+                    <msub>
+                        <mi>F</mi>
+                        <mi>g</mi>
+                    </msub>
+                    <mo>&#xB7;</mo>
+                    <mi>cos</mi>
+                    <mfenced>
+                        <mi>&#x3B1;</mi>
+                    </mfenced>
+                    <mo>+</mo>
+                    <msub>
+                        <mi>F</mi>
+                        <mi>g</mi>
+                    </msub>
+                    <mi>sin</mi>
+                    <mfenced>
+                        <mi>&#x3B1;</mi>
+                    </mfenced>
+                    <mo>=</mo>
+                    <msub>
+                        <mi>F</mi>
+                        <mi>g</mi>
+                    </msub>
+                    <mfenced>
+                        <mrow>
+                            <msub>
+                                <mi>C</mi>
+                                <mrow>
+                                    <mi>r</mi>
+                                    <mi>r</mi>
+                                </mrow>
+                            </msub>
+                            <mo>&#xB7;</mo>
+                            <mi>cos</mi>
+                            <mfenced>
+                                <mi>&#x3B1;</mi>
+                            </mfenced>
+                            <mo>+</mo>
+                            <mi>sin</mi>
+                            <mfenced>
+                                <mi>&#x3B1;</mi>
+                            </mfenced>
+                        </mrow>
+                    </mfenced>
+                    <mo>=</mo>
+                    <mi>m</mi>
+                    <mo>&#xB7;</mo>
+                    <mi>g</mi>
+                    <mo>.</mo>
+                    <mfenced>
+                        <mrow>
+                            <msub>
+                                <mi>C</mi>
+                                <mrow>
+                                    <mi>r</mi>
+                                    <mi>r</mi>
+                                </mrow>
+                            </msub>
+                            <mo>&#xB7;</mo>
+                            <mi>cos</mi>
+                            <mfenced>
+                                <mi>&#x3B1;</mi>
+                            </mfenced>
+                            <mo>+</mo>
+                            <mi>s</mi>
+                            <mi>i</mi>
+                            <mi>n</mi>
+                            <mfenced>
+                                <mi>&#x3B1;</mi>
+                            </mfenced>
+                        </mrow>
+                    </mfenced>
+                </math>
+            </equation>
+            <para/>
+            <para/>
+        </section>
+    </section>
+</appendix>

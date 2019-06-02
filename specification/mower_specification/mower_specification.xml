@@ -10,6 +10,43 @@
         <title>Propulsion</title>
         <para>The propulsion might depend on the size of the robot and its geometry. that's why
             there's a propulsion paragraph in the mower chapter.</para>
+        <para/>
+        <para/>
+        <section>
+            <title>Maximum resistance to advancement</title>
+            <para>We can calculate the maximum resistance to advancement force with <xref
+                    linkend="total_resistance"/>. With the following values:</para>
+            <para><inlineequation>
+                    <math xmlns="http://www.w3.org/1998/Math/MathML">
+                        <msub>
+                            <mi>C</mi>
+                            <mrow>
+                                <mi>r</mi>
+                                <mi>r</mi>
+                            </mrow>
+                        </msub>
+                    </math>
+                </inlineequation>: 0.3</para>
+            <para><inlineequation>
+                    <math xmlns="http://www.w3.org/1998/Math/MathML">
+                        <mi>m</mi>
+                    </math>
+                </inlineequation>: 20kg</para>
+            <para>Slope: 45°</para>
+            <para>The maximum resistance is 180N.</para>
+        </section>
+        <section>
+            <title>Propulsion motor</title>
+            <para>To be done</para>
+            <para>
+                <figure>
+                    <title>Propulsion motor</title>
+                <mediaobject>
+                    <imageobject>
+                        <imagedata fileref="propulsion_motor.jpg" align="center" width="500"/>
+                    </imageobject>
+                </mediaobject></figure></para>
+            <para/>
+        </section>
     </section>
 </chapter>
-
