@@ -1,17 +1,19 @@
-# Project ond documentation rganization
+# Project and documentation organization
 
-The project and documentation are organized into 6 main phase. A list of activities and deliverables are asociated to each phase.
+At the time being, the project documentation is organized into two main folders:
 
-* Planning
-* Concept Development
-* System-Level Design
-* Detail Design
-* Testing and Refinement
-* Production Ramp-Up
+* Requirement
+* Specifications
+
+New folders will appear as long as the project evolvre.
+
+A folder called "old_spec" still exists in the document hierarchy, but it will desapear soon.
+
+The project documentation is in constant evolution: it is continuously improved, as developments progress, and it is enriched with the arrival of new functionalities.
 
 # Specifications
 
-Gribot specifications are written in docbook, with Oxygen XML Editor.
+For the time being, Gribot documents are written in docbook, with Oxygen XML Editor.
 
 Specification are beinbg reorganized. The old specification are located in folder old_spec/out/pdf/main.pdf, while the new will be split according to the project steps in different folder.
 
@@ -27,6 +29,6 @@ These are some simple file naming rules. They have been written in order to simp
 * Folders are written in lowercase.
 * Each chapter has a dedicated folder with all related files in it.
 * Chapter folder name is the same as the main chapter file.
-* Chapter file name is the same as the chapter title, with spaces replaces by underscote.
+* Chapter file name is the same as the chapter title, with spaces replaces by underscore.
 
 
