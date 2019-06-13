@@ -3,14 +3,39 @@
 <?xml-model href="http://docbook.org/xml/5.1/sch/docbook.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <chapter xmlns="http://docbook.org/ns/docbook"
     xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
-     <title>Mower specification</title>
-     <para>This chapter describes the specification related to the mower robot.</para>
-    <para/>
+     <title>Mower</title>
+    <para>The first version of the mower robot will be of a fairly simple design. It will have 4
+        fixed wheels and will turn a little like a tracked
+        <?oxy_comment_start author="gcorbaz" timestamp="20190613T130816+0200" comment="Ajouter une image"?>machine<?oxy_comment_end?>.</para>
     <section>
-        <title>Propulsion</title>
-        <para>The propulsion might depend on the size of the robot and its geometry. that's why
-            there's a propulsion paragraph in the mower chapter.</para>
-        <para/>
+        <title>Specification</title>
+        <para>The mower specification are the following:</para>
+        <para>
+            <orderedlist>
+                <listitem>
+                    <para>Weight: 25Kg (+- 20%).</para>
+                </listitem>
+                <listitem>
+                    <para>Delimitation of the surface to be treated by GPS RTK (Real Time
+                        Kinematic), to avoid the installation of a wire.</para>
+                </listitem>
+                <listitem>
+                    <para>Working speed: 1,8 km/h, that is 0,5 m/s. This seems to be a reasonable
+                        speed for a small vehicle on an irregular surface.</para>
+                </listitem>
+                <listitem>
+                    <para>Travel speed: 1,8 km/h (see comment above).</para>
+                </listitem>
+                <listitem>
+                    <para>Ground clearance (chassis to ground distance) min 10cm, to allow movement
+                        on an uneven surface.</para>
+                </listitem>
+            </orderedlist>
+        </para>
+        <para></para>
+    </section>
+    <section>
+        <title>Propulsion sizing</title>
         <para/>
         <section>
             <title>Maximum resistance to advancement</title>
@@ -36,16 +61,319 @@
             <para>The maximum resistance is 180N.</para>
         </section>
         <section>
+            <title>Wheel diameter</title>
+            <para>The diameter of the wheels is determined by the ground clearance of the robot
+                mower chassis. Wheels with a diameter of 30cm are choosen: this ensure the minimum
+                ground clearance and leaves some room for the layout of the electric propulsion
+                motors. In addition, such wheels allow the use of inflated tires (at low pressure)
+                wich makes it easier to travel on slighly uneven ground such as in crops.</para>
+            <para>The relation between the rotational speed and wheel radius is given by:</para>
+            <equation>
+                <title>Speed as a function of rotation speed</title>
+                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <mi>V</mi>
+                    <mo>=</mo>
+                    <mn>2</mn>
+                    <mo>&#xB7;</mo>
+                    <mi mathvariant="normal">&#x3C0;</mi>
+                    <mo>&#xB7;</mo>
+                    <mi mathvariant="normal">r</mi>
+                    <mo>.</mo>
+                    <mi mathvariant="normal">&#x3C9;</mi>
+                </math>
+            </equation>
+            <para>where:</para>
+            <para>V: speed in m/s</para>
+            <para>r: wheel radius in m</para>
+            <para>ω: rotational speed in rad/s</para>
+            <para>The rotational speed can be calculated from the linear speed as follows:</para>
+            <equation>
+                <title>Rotational speed as a function of speed</title>
+                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <mi>&#x3C9;</mi>
+                    <mo>=</mo>
+                    <mfrac>
+                        <mi>V</mi>
+                        <mi>r</mi>
+                    </mfrac>
+                </math>
+            </equation>
+            <para>or, in our case:</para>
+            <para><inlineequation>
+                    <math xmlns="http://www.w3.org/1998/Math/MathML">
+                        <mi>&#x3C9;</mi>
+                        <mo>=</mo>
+                        <mfrac>
+                            <mrow>
+                                <mn>0</mn>
+                                <mo>,</mo>
+                                <mn>5</mn>
+                            </mrow>
+                            <mrow>
+                                <mn>0</mn>
+                                <mo>,</mo>
+                                <mn>1</mn>
+                                <mn>5</mn>
+                            </mrow>
+                        </mfrac>
+                        <mo>=</mo>
+                        <mn>3</mn>
+                        <mo>,</mo>
+                        <mn>33</mn>
+                        <mfrac bevelled="true">
+                            <mrow>
+                                <mi>r</mi>
+                                <mi>d</mi>
+                            </mrow>
+                            <mi>s</mi>
+                        </mfrac>
+                        <mo>=</mo>
+                        <mn>1</mn>
+                        <mo>,</mo>
+                        <mn>05</mn>
+                        <mfrac bevelled="true">
+                            <mi>t</mi>
+                            <mi>s</mi>
+                        </mfrac>
+                        <mo>=</mo>
+                        <mn>63</mn>
+                        <mfrac bevelled="true">
+                            <mi>t</mi>
+                            <mrow>
+                                <mi>m</mi>
+                                <mi>i</mi>
+                                <mi>n</mi>
+                            </mrow>
+                        </mfrac>
+                    </math>
+                </inlineequation></para>
+            <para/>
+        </section>
+        <section>
+            <title>Propulsion torque</title>
+            <para>The torque required depends directly on the diameter of the wheels and the maximum
+                resistance force. Power, on the other hand, depends on the torque and rotational
+                speed of the wheels, or on the forward speed and resistance force.</para>
+            <para>The total maximum force required for the movement is
+                <?oxy_comment_start author="gcorbaz" timestamp="20190613T130514+0200" comment="Add reference to chapter"?>180N<?oxy_comment_end?>.
+                However, it is evenly distributed over all 4-wheel drive. It is therefore 45N per
+                wheel.</para>
+            <equation>
+                <title>Maximum torque per motor</title>
+                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <mi>T</mi>
+                    <mo>=</mo>
+                    <msub>
+                        <mi>F</mi>
+                        <mrow>
+                            <mi>r</mi>
+                            <mi>r</mi>
+                        </mrow>
+                    </msub>
+                    <mo>&#xB7;</mo>
+                    <mi>r</mi>
+                    <mo>=</mo>
+                    <mn>45</mn>
+                    <mo>&#xB7;</mo>
+                    <mn>0</mn>
+                    <mo>,</mo>
+                    <mn>15</mn>
+                    <mo>=</mo>
+                    <mn>6</mn>
+                    <mo>,</mo>
+                    <mn>75</mn>
+                    <mi>N</mi>
+                    <mi>m</mi>
+                </math>
+            </equation>
+            <para>The torque of each of the 4 electric motors is therefore <emphasis role="bold"
+                    >6.75Nm</emphasis>.</para>
+        </section>
+        <section>
+            <title>Propulsion power</title>
+            <para>The total power required to propel the mower, according to the basic
+                specifications, is:</para>
+            <equation>
+                <title>Required power</title>
+                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <mi>P</mi>
+                    <mo>=</mo>
+                    <msub>
+                        <mi>F</mi>
+                        <mrow>
+                            <mi>r</mi>
+                            <mi>t</mi>
+                            <mi>o</mi>
+                            <mi>t</mi>
+                        </mrow>
+                    </msub>
+                    <mo>&#xB7;</mo>
+                    <mi>V</mi>
+                    <mo>=</mo>
+                    <mn>180</mn>
+                    <mo>&#xB7;</mo>
+                    <mn>0</mn>
+                    <mo>.</mo>
+                    <mn>5</mn>
+                    <mo>=</mo>
+                    <mn>90</mn>
+                    <mi>W</mi>
+                </math>
+            </equation>
+            <para>With 4 propulsion engines, each engine must have a power of <emphasis role="bold"
+                    >22.5W≅25W</emphasis> per engine.<footnote>
+                    <para>with the assumption that the motors and their controls have an efficiency
+                        close to 100%.</para>
+                </footnote></para>
+            <para>
+                <table frame="all">
+                    <title>Characteristics of propulsion engines</title>
+                    <tgroup cols="3">
+                        <colspec colname="c1" colnum="1" colwidth="1*"/>
+                        <colspec colname="c2" colnum="2" colwidth="1*"/>
+                        <colspec colname="c3" colnum="3" colwidth="1*"/>
+                        <thead>
+                            <row>
+                                <entry/>
+                                <entry>Value</entry>
+                                <entry>Comment</entry>
+                            </row>
+                        </thead>
+                        <tbody>
+                            <row>
+                                <entry>Power</entry>
+                                <entry>25W</entry>
+                                <entry/>
+                            </row>
+                            <row>
+                                <entry>Torque</entry>
+                                <entry>6,75Nm</entry>
+                                <entry/>
+                            </row>
+                            <row>
+                                <entry>Rotational speed</entry>
+                                <entry>60t/min</entry>
+                                <entry>with gear box</entry>
+                            </row>
+                            <row>
+                                <entry>Power supply</entry>
+                                <entry>12 ou 24 V</entry>
+                                <entry/>
+                            </row>
+                        </tbody>
+                    </tgroup>
+                </table>
+            </para>
+        </section>
+        <section>
+            <title>Power for accessories</title>
+            <para>We reserve 180W of power for connecting accessories, such as cutter bar, arm, etc.
+                to the robot.</para>
+            <para/>
+        </section>
+        <section>
+            <title>Battery pack<indexterm>
+                    <primary>Battery pack</primary>
+                </indexterm></title>
+            <para>To estimate the battery capacity, we start from the robot's autonomy, 4 hours, and
+                the total electrical power required, namely the power of the accessories and the
+                propulsion power.</para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Autonomy: 4h</para>
+                    </listitem>
+                    <listitem>
+                        <para>Total power: <inlineequation>
+                                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                                    <mn>90</mn>
+                                    <mi>W</mi>
+                                    <mo>+</mo>
+                                    <mn>180</mn>
+                                    <mi>W</mi>
+                                    <mo>=</mo>
+                                    <mn>270</mn>
+                                    <mi>W</mi>
+                                </math>
+                            </inlineequation></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>12V or 24V batteries are possible. The necessary capacities are:<indexterm>
+                    <primary>Battery capacity</primary>
+                </indexterm></para>
+            <para>
+                <table frame="all">
+                    <title>Battery capacity<indexterm>
+                            <primary>Battery&lt;</primary>
+                            <secondary>Capacity</secondary>
+                        </indexterm></title>
+                    <tgroup cols="4">
+                        <colspec colname="c1" colnum="1" colwidth="1*"/>
+                        <colspec colname="c2" colnum="2" colwidth="1*"/>
+                        <colspec colname="c3" colnum="3" colwidth="1*"/>
+                        <colspec colname="c4" colnum="4" colwidth="1*"/>
+                        <thead>
+                            <row>
+                                <entry>Nominal voltage</entry>
+                                <entry>Power</entry>
+                                <entry>Current</entry>
+                                <entry>Capacity</entry>
+                            </row>
+                        </thead>
+                        <tbody>
+                            <row>
+                                <entry>12V</entry>
+                                <entry>270W</entry>
+                                <entry>22.5A</entry>
+                                <entry>90Ah</entry>
+                            </row>
+                            <row>
+                                <entry>24V</entry>
+                                <entry>270W</entry>
+                                <entry>11.25A</entry>
+                                <entry>45Ah</entry>
+                            </row>
+                        </tbody>
+                    </tgroup>
+                </table>
+            </para>
+            <para>
+                <warning>
+                    <para>In the above estimates, we did not take into account the efficiency of
+                        motors, electronic circuits, etc. However, we have calculated the necessary
+                        capacity using the maximum continuous power, which will not always be the
+                        case.</para>
+                </warning>
+            </para>
+            <para/>
+        </section>
+        <section>
             <title>Propulsion motor</title>
-            <para>To be done</para>
+            <para>After some research, we found the following Nema 23 bldc motor 120W 24V gear
+                brushless dc motor planetary reduction gearbox ratio 50:1 with Aliexpress.</para>
+            <para>The power is much higher than we calculated, but it was quickly available at an
+                affordable cost.</para>
             <para>
                 <figure>
                     <title>Propulsion motor</title>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata fileref="propulsion_motor.jpg" align="center" width="500"/>
+                        </imageobject>
+                    </mediaobject>
+                </figure>
+            </para>
+            <para>
+                <figure>
+                    <title>Characteristics of the propulsion motor</title>
                 <mediaobject>
                     <imageobject>
-                        <imagedata fileref="propulsion_motor.jpg" align="center" width="500"/>
+                        <imagedata fileref="propulsion_motor_characteristics.jpg" width="600"
+                                align="center"/>
                     </imageobject>
                 </mediaobject></figure></para>
+
             <para/>
         </section>
     </section>

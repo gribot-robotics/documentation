@@ -7,140 +7,167 @@
      <para>The platform specification chapter contains element common to all robot that can be
         derived from the <emphasis>gribot</emphasis> platform. It goes from the propulsion system to
         navigation, including communication between the various elements.</para>
-    <para/>
+    <!--<section><title>System architecture</title><para>To be done</para></section>-->
     <section>
-        <title>System architecture</title>
-        <para>To be done</para>
+        <title>Mechanical design</title>
+        <para>The mechanical design is specific to the robot that will be built.</para>
     </section>
     <section>
-        <title>Electronic</title>
-        <para/>
-        <section>
-            <title>Embedded computer</title>
-            <para>The embedded computer is one of the critical elements of the robot. He is in
-                charge of hosting the software that manages the robot. The embedded computer must
-                satisfy several constraints:</para>
-            <para>
-                <itemizedlist>
-                    <listitem>
-                        <para>It must be affordable</para>
-                    </listitem>
-                    <listitem>
-                        <para>It must have enough memory to allow the operation of the various
-                            embedded software packages.</para>
-                    </listitem>
-                    <listitem>
-                        <para>Its disk capacity must be sufficient for the storage of the files
-                            necessary for the robot's operation.</para>
-                    </listitem>
-                    <listitem>
-                        <para>It should have a WiFi interface.</para>
-                    </listitem>
-                    <listitem>
-                        <para>It must have a family of interfaces, including CAN, I2C, USB, serial,
-                            etc. Either directly on the card or via plug-in cards.</para>
-                    </listitem>
-                    <listitem>
-                        <para>I must have interfaces or navigation charts such as GPS,
-                            accelerometers, electronic compasses, etc.</para>
-                    </listitem>
-                    <listitem>
-                        <para>It must support Ubuntu distribution.</para>
-                    </listitem>
-                </itemizedlist>
-            </para>
-            <para>Raspberry Pi is one of these small computer that fulfill almost all of the
-                requirements above. At the time of writing, the available version is the Raspberry
-                Pi 3.</para>
-            <para>
-                <figure>
-                    <title>Raspberry Pi</title>
+        <title>Embedded computer</title>
+        <para>The embedded computer is one of the critical elements of the robot. He is in
+            charge of hosting the software that manages the robot. The embedded computer must
+            satisfy several constraints:</para>
+        <para>
+            <itemizedlist>
+                <listitem>
+                    <para>It must be affordable</para>
+                </listitem>
+                <listitem>
+                    <para>It must have enough memory to allow the operation of the various
+                        embedded software packages.</para>
+                </listitem>
+                <listitem>
+                    <para>Its disk capacity must be sufficient for the storage of the files
+                        necessary for the robot's operation.</para>
+                </listitem>
+                <listitem>
+                    <para>It should have a WiFi interface.</para>
+                </listitem>
+                <listitem>
+                    <para>It must have a family of interfaces, including CAN, I2C, USB, serial,
+                        etc. Either directly on the card or via plug-in cards.</para>
+                </listitem>
+                <listitem>
+                    <para>I must have interfaces or navigation charts such as GPS,
+                        accelerometers, electronic compasses, etc.</para>
+                </listitem>
+                <listitem>
+                    <para>It must support Ubuntu distribution.</para>
+                </listitem>
+            </itemizedlist>
+        </para>
+        <para>Raspberry Pi is one of these small computer that fulfill almost all of the
+            requirements above. At the time of writing, the available version is the Raspberry
+            Pi 3.</para>
+        <para>
+            <figure>
+                <title>Raspberry Pi</title>
                 <mediaobject>
                     
                     <imageobject>
                         <imagedata fileref="raspberry_pi_3.jpg" width="400" align="center"/>
                     </imageobject>
                 </mediaobject>
-                </figure></para>
-            <para>The Raspberry Pi 3 has enougth memory to run Ubuntu distribution together with
-                ROS. It also supports high-capacity SD cards, and has a whole collection of
-                interfaces and various cards.</para>
-        </section>
-        <section>
-            <title>Communication bus</title>
-            <para>Les différents composants électronique doivent pouvoir communiquer de manière
-                fiable avec l'ordinateur embarqué. Il existe plusieurs solutions de
-                communication:</para>
-            <para>
-                <variablelist>
-                    <varlistentry>
-                        <term>Star communication</term>
-                        <listitem>
-                            <para>Each component is connected individually to the central computer.
-                                This solution requires one connection cable per element as well as a
-                                dedicated interface on the central computer. The number of
-                                peripheral elements and the extension of the system is limited by
-                                the interfaces available on the computer.</para>
-                        </listitem>
-                    </varlistentry>
-                    <varlistentry>
-                        <term>Bus communication</term>
-                        <listitem>
-                            <para>Data bus communication may be a little more complex to implement
-                                than star communication, but it offers much greater flexibility. It
-                                requires only a small number of interfaces, and the number of
-                                systems connected to the bus, and therefore its extension
-                                possibilities, are limited only by the technology used. The current
-                                buses make it easy to connect several tenths of peripheral
-                                equipment, which is more than enough for our needs.</para>
-                        </listitem>
-                    </varlistentry>
-                </variablelist>
-            </para>
-            <para>We will retain the communication bus for our application. However, it is possible
-                to connect some equipment directly to the central computer if necessary, provided
-                that the interfaces are available.</para>
-            <para>The communication bus must comply with the following criteria:</para>
-            <para>
-                <itemizedlist>
+            </figure></para>
+        <para>The Raspberry Pi 3 has enougth memory to run Ubuntu distribution together with
+            ROS. It also supports high-capacity SD cards, and has a whole collection of
+            interfaces and various cards.</para>
+    </section>
+    <section>
+        <title>Communication bus</title>
+        <para>Les différents composants électronique doivent pouvoir communiquer de manière
+            fiable avec l'ordinateur embarqué. Il existe plusieurs solutions de
+            communication:</para>
+        <para>
+            <variablelist>
+                <varlistentry>
+                    <term>Star communication</term>
                     <listitem>
-                        <para>The bus must allow the prioritization of messages.</para>
+                        <para>Each component is connected individually to the central computer.
+                            This solution requires one connection cable per element as well as a
+                            dedicated interface on the central computer. The number of
+                            peripheral elements and the extension of the system is limited by
+                            the interfaces available on the computer.</para>
                     </listitem>
+                </varlistentry>
+                <varlistentry>
+                    <term>Bus communication</term>
                     <listitem>
-                        <para>The bus must allow real-time communication.</para>
+                        <para>Data bus communication may be a little more complex to implement
+                            than star communication, but it offers much greater flexibility. It
+                            requires only a small number of interfaces, and the number of
+                            systems connected to the bus, and therefore its extension
+                            possibilities, are limited only by the technology used. The current
+                            buses make it easy to connect several tenths of peripheral
+                            equipment, which is more than enough for our needs.</para>
                     </listitem>
-                    <listitem>
-                        <para>The bus must be a standard on the market, in order to be able to
-                            connect various types of equipment.</para>
-                    </listitem>
-                    <listitem>
-                        <para>The bus must be reliable.</para>
-                    </listitem>
-                    <listitem>
-                        <para>The bus must be cheap.</para>
-                    </listitem>
-                </itemizedlist>
-            </para>
-            <para>Among the various buses available on the market, the CAN (Controller Area Network)
-                bus is one that meets the above criteria. It comes from the automotive world and is
-                widely distributed. The use of the CANOpen protocol allows the connection of a large
-                number of equipment that support this standard.</para>
-            <para>
-                <figure>
-                    <title>CanOPEN logo</title>
-                    <mediaobject>
+                </varlistentry>
+            </variablelist>
+        </para>
+        <para>We will retain the communication bus for our application. However, it is possible
+            to connect some equipment directly to the central computer if necessary, provided
+            that the interfaces are available.</para>
+        <para>The communication bus must comply with the following criteria:</para>
+        <para>
+            <itemizedlist>
+                <listitem>
+                    <para>The bus must allow the prioritization of messages.</para>
+                </listitem>
+                <listitem>
+                    <para>The bus must allow real-time communication.</para>
+                </listitem>
+                <listitem>
+                    <para>The bus must be a standard on the market, in order to be able to
+                        connect various types of equipment.</para>
+                </listitem>
+                <listitem>
+                    <para>The bus must be reliable.</para>
+                </listitem>
+                <listitem>
+                    <para>The bus must be cheap.</para>
+                </listitem>
+            </itemizedlist>
+        </para>
+        <para>Among the various buses available on the market, the CAN (Controller Area Network)
+            bus is one that meets the above criteria. It comes from the automotive world and is
+            widely distributed. The use of the CANOpen protocol allows the connection of a large
+            number of equipment that support this standard.</para>
+        <para>
+            <figure>
+                <title>CanOPEN logo</title>
+                <mediaobject>
                     <imageobject>
                         <imagedata fileref="Canopen_logo.png" width="300" align="center"/>
                     </imageobject>
                 </mediaobject></figure>
-            </para>
-            <para>Development of the CAN bus started in 1983 at Robert Bosch GmbH. The protocol was
-                officially released in 1986 at the Society of Automotive Engineers (SAE) conference
-                in Detroit, Michigan. The CAN bus is not only limited to the automobile. Due to its
-                characteristics, it is widely used in many sectors such as industrial automation,
-                aviation, etc.</para>
-            <para/>
-        </section>
+        </para>
+        <para>Development of the CAN bus started in 1983 at Robert Bosch GmbH. The protocol was
+            officially released in 1986 at the Society of Automotive Engineers (SAE) conference
+            in Detroit, Michigan. The CAN bus is not only limited to the automobile. Due to its
+            characteristics, it is widely used in many sectors such as industrial automation,
+            aviation, etc.</para>
+    </section>
+    <section>
+        <title>Propulsion engine controller</title>
+        <para>To be done</para>
+    </section>
+    <section>
+        <title>Accessories engine controller</title>
+        <para>To be done</para>
+    </section>
+    <section>
+        <title>Lidar</title>
+        <para>To be done</para>
+    </section>
+    <section>
+        <title>GPS</title>
+        <para>To be done</para>
+    </section>
+    <section>
+        <title>Local contacts</title>
+        <para>To be done</para>
+    </section>
+    <section>
+        <title>Battery</title>
+        <para>To be done</para>
+    </section>
+    <section>
+        <title>Attitude sensors</title>
+        <para>To be done</para>
+    </section>
+    <section>
+        <title>Communication</title>
+        <para>To be done (WiFi, GSM, IP, etc.)</para>
     </section>
     <section>
         <title>Software</title>
@@ -154,9 +181,9 @@
                 number of modules and interfaces, which reduces development times.</para>
             <para>Thanks to its modular design and communication bus, ROS makes it easy to develop
                 missing modules: part of the software is installed on the robot, and the other part
-                is under development on the developer's workstation. It is even theoretically
-                possible that the developer may be located at a distance, in another city, another
-                country or even another continent, from the development robot<footnote>
+                under development is installed on the developer's workstation. It is even
+                theoretically possible that the developer may be located at a distance, in another
+                city, another country or even another continent, from the development robot<footnote>
                     <para>We have not tested the feasibility of this way of developing at the time
                         of writing.</para>
                 </footnote>.</para>
@@ -171,4 +198,3 @@
         </section>
     </section>
 </chapter>
-
