@@ -377,4 +377,21 @@
             <para/>
         </section>
     </section>
+    <section>
+        <title>Design</title>
+        <para/>
+        <para/>
+        <section>
+            <title>Transmission</title>
+            <para/>
+            <para><figure>
+                <title>Transmission prototype</title>
+                <mediaobject>
+                    <imageobject>
+                        <imagedata fileref="Transmission.JPG" width="600" align="center"/>
+                    </imageobject>
+            </mediaobject></figure></para>
+            <para/>
+        </section>
+    </section>
 </chapter>
